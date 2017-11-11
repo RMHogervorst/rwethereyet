@@ -1,0 +1,22 @@
+---
+title: "Introduction to r-we-there-yet"
+author: "Roel M. Hogervorst"
+date: date()
+categories: ["R"]
+tags: ["idea", ""]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+Following up on a blogpost by Sean Kross: <http://seankross.com/2017/11/06/Enabling-Frequent-Brain-Dumps.html>
+
+I have the same idea and will put up a lot of not yet prettified ideas online.
+
+This will be just small snippets and ideas.
+
+> Things that are still on your computer are approximetly useless
+
+[tweet (2017-11-03) by Amelia McNamara citing David Robinson @drob](https://twitter.com/AmeliaMN/status/926509282874585089)
+
