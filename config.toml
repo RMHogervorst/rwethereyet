@@ -1,9 +1,9 @@
 theme = "hugo-xmin"
-baseURL = "http://example.org/"
+baseURL = "rmhogervorst.nl"
 languageCode = "en-us"
 title = "A braindump of unfinished ideas that are just not there yet"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-preserveTaxonomyNames = true
+preserveTaxonomyNames = false
 footnotereturnlinkcontents = "↩"
 
 [permalinks]
@@ -29,12 +29,7 @@ weight = 4
 [[menu.main]]
     name = "Subscribe"
 url = "/index.xml"
-[[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/rmhogervorst/rwethereyet"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rmhoge"
+
 
 [params]
 description = "A website built through Hugo and blogdown."
