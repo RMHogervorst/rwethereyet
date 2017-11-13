@@ -1,7 +1,7 @@
 ---
 title: "Introduction to r-we-there-yet"
 author: "Roel M. Hogervorst"
-date: date()
+date: "2017-11-11"
 categories: ["R"]
 tags: ["idea", ""]
 ---
