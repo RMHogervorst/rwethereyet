@@ -1,5 +1,5 @@
 theme = "hugo-xmin"
-baseURL = "rmhogervorst.nl"
+baseURL = "https://rmhogervorst-rwethereyet.netlify.com"
 languageCode = "en-us"
 title = "A braindump of unfinished ideas that are just not there yet"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]

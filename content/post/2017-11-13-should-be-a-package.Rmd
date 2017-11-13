@@ -1,0 +1,12 @@
+---
+title: Should be a package
+author: Roel M. Hogervorst
+date: '2017-11-13'
+slug: should-be-a-package
+categories:
+  - R
+tags: [package]
+---
+
+https://github.com/RMHogervorst/shouldbeapackage
+
