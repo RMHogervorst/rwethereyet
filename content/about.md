@@ -13,6 +13,6 @@ computer.
 ~ Roel
 
 
-You can find my github [here](https://github.com/rmhogervorst), my twitter [here](https://twitter.com/rmhoge)
+You can find my github [here](https://github.com/rmhogervorst), my twitter [here](https://twitter.com/roelmhogervorst)
 
 
