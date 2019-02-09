@@ -17,7 +17,7 @@ note = "/note/:year/:month/:day/:slug/"
 [[menu.main]]
     name = "Main blog: Roel's R-tefacts"
     url = "https://blog.rmhogervorst.nl"
-    weight = "1"
+    weight = "2"
 [[menu.main]]
     name = "About"
     url = "/about/"
