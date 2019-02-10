@@ -1,7 +1,7 @@
 ---
 title: Inspiration category
 author: Roel M. Hogervorst
-date: '2010-02-09'
+date: '2019-02-09'
 slug: inspiration
 categories:
   - inspiration
