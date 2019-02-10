@@ -19,3 +19,6 @@ The following websites have images with cc by 0 or other open licence
 And for icons I can not recommend enough: 
 
 - the noun project <https://thenounproject.com/>
+
+
+IF you want to laugh: [pictures of big data "Big Data is visualized in so many ways...all of them blue and with numbers and lens flare. "](https://bigdatapix.tumblr.com/)
