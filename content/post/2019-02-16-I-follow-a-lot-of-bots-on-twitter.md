@@ -97,7 +97,7 @@ that I spend an hour curating and sorting from general to oddly niche:
 
 - [old french crimes](https://twitter.com/OldFrenchCrime/) 
 
-{{< tweet: 1096640149356724224 >}}
+{{< tweet 1096640149356724224 >}}
 
 - [unusual wikipedia articles](https://twitter.com/unusualBot/) 
 {{< tweet 1091129896146006016 >}}
@@ -128,7 +128,7 @@ that I spend an hour curating and sorting from general to oddly niche:
 {{< tweet 1096594533167611909 >}}
 
 - [CyberSquirrel ](https://twitter.com/CyberSquirrel1)  'I'm in your Infrastructures eatin your cables. Disrupting at the highest levels! ' mostly stories about rodents disrupting infrastructure
-{{< tweet 1093347285130448896> }}
+{{< tweet 1093347285130448896 >}}
 
 - [taalvoutjes , dutch, language mistakes that are funny, for Dutch people ](https://twitter.com/Taalvoutjes/)
 {{< tweet 1095248660097613824 >}}
@@ -154,7 +154,6 @@ text and images from futurist people and the artist picks which ones to display
 
 - {{< tweet 1057165381964623872 >}}
 
-- {{< tweet 109501511080704000 >}}
 
 - {{< tweet 1096040612862836737 >}}
 
