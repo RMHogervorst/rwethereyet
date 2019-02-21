@@ -7,6 +7,8 @@ categories:
   - inspiration
 tags:
   - ggplot2
+  - projection
+  - visualisation
 ---
 
 Claus Wilke has a nice overview of World projections in ggplot2:
