@@ -1,8 +1,8 @@
 ---
-title: Add a wrapper around functions you call in map
+title: Schedule posts and netlify magic
 author: Roel M. Hogervorst
-date: '2017-11-17'
-slug: rebuilding-blog
+date: '2019-02-21'
+slug: schedule-posts-and-netlify-magic
 categories:
   - other
 tags:
