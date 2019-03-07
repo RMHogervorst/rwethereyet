@@ -14,6 +14,6 @@ tags:
 
 I don't know anything else about this, but it is awesome!
 
-![a dress that changes from white to black](https://i.imgur.com/U2Bp1D6.mp4)
-
+![a dress that changes from white to black](images/dress.gif)
+<https://i.imgur.com/U2Bp1D6.gifv>
 It is very cool, but as someone mentioned in the comments: 'no pockets'.
