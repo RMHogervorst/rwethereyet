@@ -16,12 +16,12 @@ you how many kilograms of CO2 you create flying to that destination.:
 
 For instance how may kilograms is it to fly to my friend in Salt lake City?
 2718 kilograms! 
-<http://flightemissionmap.org/#Amsterdam/52.34,4.9>
+<https://flightemissionmap.org/#Amsterdam/52.34,4.9>
 
 and here the embedded example:
 
 <iframe width="800px" height="600px"
-       src="http://flightemissionmap.org/#Amsterdam/52.34,4.9">
+       src="https://flightemissionmap.org/#Amsterdam/52.34,4.9">
     </iframe>
 
 
