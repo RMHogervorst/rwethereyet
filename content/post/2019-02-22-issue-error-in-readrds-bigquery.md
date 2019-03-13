@@ -1,5 +1,5 @@
 ---
-title: Issue
+title: Issue with BigQuery 
 author: Roel M. Hogervorst
 date: '2017-11-17'
 slug: issue-error-in-readrds-bigquery
