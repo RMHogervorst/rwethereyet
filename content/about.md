@@ -16,3 +16,4 @@ computer.
 You can find my github [here](https://github.com/rmhogervorst), my twitter [here](https://twitter.com/roelmhogervorst)
 
 
+Security related questions see [security.txt](/.well-known/security.txt.asc)
