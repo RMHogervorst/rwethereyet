@@ -1,0 +1,17 @@
+div.image-gallery {
+  display: block;
+  background-color: #cccccc;
+}
+
+div.image-gallery img {
+  display: block;
+  float: left;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  font-size: 1px;
+  line-height: 0;
+}
