@@ -9,8 +9,9 @@ categories:
 tags:
   - visualisation
   - music
+  - Nightingale
 subtitle: ''
-share_img: https://media.giphy.com/media/7Jpnmq5OGeOnb7nP3b/giphy.gif
+share_img: '/2020-06-11-a-colored-dot-matrix-plot-for-music-overview/index_files/ranking_sketch.png'
 ---
 
 The Nightingale (The Journal of the Data Visualization Society) creates some very nice visualisations.
