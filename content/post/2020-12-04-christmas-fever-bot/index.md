@@ -14,7 +14,6 @@ tags:
 slug: christmas-fever-bot
 ---
 
-
 Last year hackaday found this [project](https://hackaday.com/2019/12/24/tiny-tree-is-a-thermometer-for-christmas-fever/).
 They always have the most amazing finds. The post links to a [youtube video](https://www.youtube.com/watch?v=JdYQyiK1drk) by '8 bits and a byte' 
 
