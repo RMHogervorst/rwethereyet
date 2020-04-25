@@ -2,7 +2,7 @@ theme = "hugo-xmin"
 baseURL = "https://rmhogervorst-rwethereyet.netlify.com"
 languageCode = "en-us"
 title = "A braindump of unfinished ideas that are just not there yet"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "index\\.html"]
 preserveTaxonomyNames = false
 footnotereturnlinkcontents = "↩"
 
