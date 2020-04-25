@@ -5,7 +5,6 @@ date: {{ .Date }}
 categories: []
 tags: []
 subtitle: ""
-share_img: 'https://media.giphy.com/media/7Jpnmq5OGeOnb7nP3b/giphy.gif'
 ---
 
 <!--
