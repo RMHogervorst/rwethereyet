@@ -1,0 +1,199 @@
+---
+title: When Does Sorting Matter
+author: Roel M. Hogervorst
+date: '2020-05-07'
+slug: when-does-sorting-matter
+categories:
+  - R
+tags:
+  - ggplot2
+  - sprite
+output: 
+  html_document:
+    keep_md: true
+---
+
+I was working on an implementation of SPRITE [(Sample Parameter Reconstruction  via Iterative TEchniques)](https:://peerj.preprints.26968v1 "Heathers JA, Anaya J, van der Zee T, Brown NJ. 2018. Recovering data from summary statistics: Sample Parameter Reconstruction via Iterative TEchniques (SPRITE) PeerJ Preprints 6:e26968v1 https://doi.org/10.7287/peerj.preprints.26968v1")
+and looking into possible speedups of the process. 
+
+```{r setup, include=FALSE}
+# Options to have images saved in the post folder
+# And to disable symbols before output
+knitr::opts_chunk$set(fig.path = "", comment = "")
+
+# knitr hook to make images output use Hugo options
+knitr::knit_hooks$set(
+  plot = function(x, options) {
+    hugoopts <- options$hugoopts
+    paste0(
+      "{{<figure src=",
+      '"', x, '" ',
+      if (!is.null(hugoopts)) {
+        glue::glue_collapse(
+          glue::glue('{names(hugoopts)}="{hugoopts}"'),
+          sep = " "
+        )
+      },
+      ">}}\n"
+    )
+  }
+)
+
+# knitr hook to use Hugo highlighting options
+knitr::knit_hooks$set(
+  source = function(x, options) {
+  hlopts <- options$hlopts
+    paste0(
+      "```r ",
+      if (!is.null(hlopts)) {
+      paste0("{",
+        glue::glue_collapse(
+          glue::glue('{names(hlopts)}={hlopts}'),
+          sep = ","
+        ), "}"
+        )
+      },
+      "\n", glue::glue_collapse(x, sep = "\n"), "\n```\n"
+    )
+  }
+)
+```
+
+In general I think there are 2 ways to speed up processes:
+
+- Do the same thing, but faster (using a different language, using vectorization, pre-allocating structures)
+- Do the thing smarter (skip steps, use different structures)
+
+
+Sprite is a tool to recreate underlying data when you only have the summary statistics. 
+The sprite process creates a vector of integers of the size as the real sample size and 
+tweaks it by incrementing and or decrementing values in that vector. 
+
+
+One of the possible speedups would be to use sorting. To identify candidate values in the vector the process does a lot of vector operations which are quite fast, but that does mean that for 
+every operation the process needs to check
+every value in the vector for a condition (is it bigger than x, is it the max, etc.). 
+
+Theoretically, if the 
+vector was sorted, the process would be quicker (if this value is bigger, than all values after
+are also, etc.). But the sorting process takes time too. Is the time win for these operations 
+enough for the extra cost of sorting the vector?
+
+Of course! I hear you think. But most of the experiments in social and medical sciences, the primary target for this tool, are smaller than 1000 samples.
+
+Let's simulate:
+
+```{r packages needed}
+library(tidyverse) # I want dplyr, ggplot2 and some string manipulation too
+library(microbenchmark)
+```
+
+Some functions:
+
+```{r}
+# create unsorted integer representation. of length 10^ c(1, 2,3,4,5,6,7,8,9)
+# 9 is already too much!
+# more doesn't matter for this purpose.
+create_int_vector_length_n <- function(n){
+    scale_max = 31L  # using int here makes it go from 5someting to 4somthing.
+    scale_min = 1L
+    mean = 15
+    pmax(pmin(as.integer(runif(n) * 2 * mean), scale_max), scale_min)
+}
+# additive cost of sorting
+create_and_sort_n<- function(n){
+    vec <- create_int_vector_length_n(n)
+    sort(vec)
+}
+#### actions (it is really not more sophisticated than this)
+# smaller than max
+# smaller than value
+# duplicate
+# not equal to a value
+execute_functions <- function(vec){
+    endresult = !duplicated(vec) & !(vec %in% c(2,3)) & vec < 11
+}
+```
+
+Then we can check the cost of sorting.
+
+```{r}
+l1= create_int_vector_length_n(10^1)
+l2= create_int_vector_length_n(10^2)
+l3= create_int_vector_length_n(10^3)
+l4= create_int_vector_length_n(10^4)
+l5= create_int_vector_length_n(10^5)
+l6= create_int_vector_length_n(10^6)
+
+sorting_only <- microbenchmark(
+    l1=sort(l1), l2=sort(l2),
+    l3= sort(l3), l4 = sort(l4), l5 = sort(l5), l6= sort(l6)
+)
+ggplot2::autoplot(sorting_only) + ggtitle("Integer vector sorting")
+```
+
+Yes this is measured in microseconds, sorting an integer vector of length 1000 takes at least 0.1 second.
+
+How long does it take to create a vector?
+
+```{r}
+creation <- microbenchmark(
+    l1= create_int_vector_length_n(10^1), l2= create_int_vector_length_n(10^2),
+    l3= create_int_vector_length_n(10^3), l4= create_int_vector_length_n(10^4),
+    l5= create_int_vector_length_n(10^5), l6= create_int_vector_length_n(10^6)
+)
+ggplot2::autoplot(creation)+ggtitle("vector creation time")
+```
+
+Creation takes about as much time for 1000 to 10.000 samples.
+
+So are the functions faster on sorted data?
+
+```{r}
+l1_sorted <- sort(l1)
+l2_sorted <- sort(l2)
+l3_sorted <- sort(l3)
+l4_sorted <- sort(l4)
+l5_sorted <- sort(l5)
+l6_sorted <- sort(l6)
+sort_vs_unsorted <- microbenchmark(
+    l1=execute_functions(l1),
+    l1_sort = execute_functions(l1_sorted),
+    l2=execute_functions(l2),
+    l2_sort = execute_functions(l2_sorted),
+    l3= execute_functions(l3),
+    l3_sort = execute_functions(l3_sorted),
+    l4= execute_functions(l4),
+    l4_sort = execute_functions(l4_sorted),
+    l5= execute_functions(l5),
+    l5_sort = execute_functions(l5_sorted),
+    l6= execute_functions(l6),
+    l6_sort = execute_functions(l6_sorted)
+)
+ggplot2::autoplot(sort_vs_unsorted)+
+    labs(title="Sorting does not seem to help us")
+```
+
+Let's do a more fair comparison
+
+```{r}
+sort_and_execute_functions<- function(vec){
+    vec <- sort(vec)
+    endresult <- execute_functions(vec)
+}
+comparison <- microbenchmark(
+    l1 = execute_functions(l1),
+    l1_s = sort_and_execute_functions(l1),
+    l2 = execute_functions(l2),
+    l2_s = sort_and_execute_functions(l2),
+    l3 = execute_functions(l3),
+    l3_s = sort_and_execute_functions(l3),
+    l4 = execute_functions(l4),
+    l4_s = sort_and_execute_functions(l4),
+    l5 = execute_functions(l5),
+    l5_s = sort_and_execute_functions(l5)
+)
+autoplot(comparison) + ggtitle("Sorting only slows down")
+```
+
+There you have it. I decided not to sort. 
