@@ -1,0 +1,149 @@
+---
+title: When Does Sorting Matter
+author: Roel M. Hogervorst
+date: '2020-05-07'
+slug: when-does-sorting-matter
+categories:
+  - R
+tags:
+  - ggplot2
+  - sprite
+output: 
+  html_document:
+    keep_md: true
+---
+
+
+
+<p>I was working on an implementation of SPRITE <a href="https:://peerj.preprints.26968v1" title="Heathers JA, Anaya J, van der Zee T, Brown NJ. 2018. Recovering data from summary statistics: Sample Parameter Reconstruction via Iterative TEchniques (SPRITE) PeerJ Preprints 6:e26968v1 https://doi.org/10.7287/peerj.preprints.26968v1">(Sample Parameter Reconstruction via Iterative TEchniques)</a>
+and looking into possible speedups of the process.</p>
+<p>In general I think there are 2 ways to speed up processes:</p>
+<ul>
+<li>Do the same thing, but faster (using a different language, using vectorization, pre-allocating structures)</li>
+<li>Do the thing smarter (skip steps, use different structures)</li>
+</ul>
+<p>Sprite is a tool to recreate underlying data when you only have the summary statistics.
+The sprite process creates a vector of integers of the size as the real sample size and
+tweaks it by incrementing and or decrementing values in that vector.</p>
+<p>One of the possible speedups would be to use sorting. To identify candidate values in the vector the process does a lot of vector operations which are quite fast, but that does mean that for
+every operation the process needs to check
+every value in the vector for a condition (is it bigger than x, is it the max, etc.).</p>
+<p>Theoretically, if the
+vector was sorted, the process would be quicker (if this value is bigger, than all values after
+are also, etc.). But the sorting process takes time too. Is the time win for these operations
+enough for the extra cost of sorting the vector?</p>
+<p>Of course! I hear you think. But most of the experiments in social and medical sciences, the primary target for this tool, are smaller than 1000 samples.</p>
+<p>Let’s simulate:</p>
+<pre class="r"><code>library(tidyverse) # I want dplyr, ggplot2 and some string manipulation too</code></pre>
+<pre><code>── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>✓ ggplot2 3.3.0     ✓ purrr   0.3.4
+✓ tibble  3.0.1     ✓ dplyr   0.8.5
+✓ tidyr   1.0.2     ✓ stringr 1.4.0
+✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
+<pre><code>── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(microbenchmark)</code></pre>
+<p>Some functions:</p>
+<pre class="r"><code># create unsorted integer representation. of length 10^ c(1, 2,3,4,5,6,7,8,9)
+# 9 is already too much!
+# more doesn&#39;t matter for this purpose.
+create_int_vector_length_n &lt;- function(n){
+    scale_max = 31L  # using int here makes it go from 5someting to 4somthing.
+    scale_min = 1L
+    mean = 15
+    pmax(pmin(as.integer(runif(n) * 2 * mean), scale_max), scale_min)
+}
+# additive cost of sorting
+create_and_sort_n&lt;- function(n){
+    vec &lt;- create_int_vector_length_n(n)
+    sort(vec)
+}
+#### actions (it is really not more sophisticated than this)
+# smaller than max
+# smaller than value
+# duplicate
+# not equal to a value
+execute_functions &lt;- function(vec){
+    endresult = !duplicated(vec) &amp; !(vec %in% c(2,3)) &amp; vec &lt; 11
+}</code></pre>
+<p>Then we can check the cost of sorting.</p>
+<pre class="r"><code>l1= create_int_vector_length_n(10^1)
+l2= create_int_vector_length_n(10^2)
+l3= create_int_vector_length_n(10^3)
+l4= create_int_vector_length_n(10^4)
+l5= create_int_vector_length_n(10^5)
+l6= create_int_vector_length_n(10^6)
+
+sorting_only &lt;- microbenchmark(
+    l1=sort(l1), l2=sort(l2),
+    l3= sort(l3), l4 = sort(l4), l5 = sort(l5), l6= sort(l6)
+)
+ggplot2::autoplot(sorting_only) + ggtitle(&quot;Integer vector sorting&quot;)</code></pre>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+{{
+<figure src="unnamed-chunk-2-1.png" >
+<p>}}</p>
+<p>Yes this is measured in microseconds, sorting an integer vector of length 1000 takes at least 0.1 second.</p>
+<p>How long does it take to create a vector?</p>
+<pre class="r"><code>creation &lt;- microbenchmark(
+    l1= create_int_vector_length_n(10^1), l2= create_int_vector_length_n(10^2),
+    l3= create_int_vector_length_n(10^3), l4= create_int_vector_length_n(10^4),
+    l5= create_int_vector_length_n(10^5), l6= create_int_vector_length_n(10^6)
+)
+ggplot2::autoplot(creation)+ggtitle(&quot;vector creation time&quot;)</code></pre>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+{{
+<figure src="unnamed-chunk-3-1.png" >
+<p>}}</p>
+<p>Creation takes about as much time for 1000 to 10.000 samples.</p>
+<p>So are the functions faster on sorted data?</p>
+<pre class="r"><code>l1_sorted &lt;- sort(l1)
+l2_sorted &lt;- sort(l2)
+l3_sorted &lt;- sort(l3)
+l4_sorted &lt;- sort(l4)
+l5_sorted &lt;- sort(l5)
+l6_sorted &lt;- sort(l6)
+sort_vs_unsorted &lt;- microbenchmark(
+    l1=execute_functions(l1),
+    l1_sort = execute_functions(l1_sorted),
+    l2=execute_functions(l2),
+    l2_sort = execute_functions(l2_sorted),
+    l3= execute_functions(l3),
+    l3_sort = execute_functions(l3_sorted),
+    l4= execute_functions(l4),
+    l4_sort = execute_functions(l4_sorted),
+    l5= execute_functions(l5),
+    l5_sort = execute_functions(l5_sorted),
+    l6= execute_functions(l6),
+    l6_sort = execute_functions(l6_sorted)
+)
+ggplot2::autoplot(sort_vs_unsorted)+
+    labs(title=&quot;Sorting does not seem to help us&quot;)</code></pre>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+{{
+<figure src="unnamed-chunk-4-1.png" >
+<p>}}</p>
+<p>Let’s do a more fair comparison</p>
+<pre class="r"><code>sort_and_execute_functions&lt;- function(vec){
+    vec &lt;- sort(vec)
+    endresult &lt;- execute_functions(vec)
+}
+comparison &lt;- microbenchmark(
+    l1 = execute_functions(l1),
+    l1_s = sort_and_execute_functions(l1),
+    l2 = execute_functions(l2),
+    l2_s = sort_and_execute_functions(l2),
+    l3 = execute_functions(l3),
+    l3_s = sort_and_execute_functions(l3),
+    l4 = execute_functions(l4),
+    l4_s = sort_and_execute_functions(l4),
+    l5 = execute_functions(l5),
+    l5_s = sort_and_execute_functions(l5)
+)
+autoplot(comparison) + ggtitle(&quot;Sorting only slows down&quot;)</code></pre>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+{{
+<figure src="unnamed-chunk-5-1.png" >
+<p>}}</p>
+<p>There you have it. I decided not to sort.</p>
