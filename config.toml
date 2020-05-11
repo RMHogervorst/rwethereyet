@@ -32,6 +32,9 @@ weight = 4
 [[menu.main]]
     name = "twitter"
     url = "https://twitter.com/roelmhogervorst"
+[[menu.main]]
+    name="my personal inspiration + visualisation feed on pinboard"
+    url="https://pinboard.in/u:rmhogervorst/t:inspiration/t:visualisation/"
 
 
 [params]
