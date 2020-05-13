@@ -12,7 +12,7 @@ note = "/note/:year/:month/:day/:slug/"
 
 [[menu.main]]
     name = "Notes main page"
-    url = "/post/"
+    url = "/"
     weight = 1
 [[menu.main]]
     name = "Main blog: Roel's R-tefacts"
