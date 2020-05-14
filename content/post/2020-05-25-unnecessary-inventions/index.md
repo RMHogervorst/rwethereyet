@@ -9,8 +9,7 @@ tags:
   - inspiration
   - inventions
   - hardware
-  
-subtitle: 'I don't need it, but boy do I want those!'
+subtitle: "I don't need it, but boy do I want those!"
 ---
 
 Some of these inventions make me laugh soo hard:
