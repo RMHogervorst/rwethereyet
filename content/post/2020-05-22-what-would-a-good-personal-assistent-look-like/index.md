@@ -5,7 +5,7 @@ date: '2020-05-22'
 categories:
   - other
 tags:
-  - 100DaysOfOffload
+  - 100DaysToOffload
   - personal assistent
   - location
 slug: what-would-a-good-personal-assistent-look-like-location
