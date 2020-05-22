@@ -52,4 +52,4 @@ image source: [Photo by Clay Banks on Unsplash](https://unsplash.com/photos/b5S4
 
 *I’m publishing this as part of 100 Days To Offload. You can join in yourself by visiting https://100daystooffload.com, post - 1/100*
 
-*Find other posts tagged  [#100DaysToOffload here](https://notes.rmhogervorst.nl/tag/100DaysToOffload/)*
+*Find other posts tagged  [#100DaysToOffload here](https://notes.rmhogervorst.nl/tags/100daystooffload/)*
