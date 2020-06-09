@@ -26,7 +26,7 @@ Now I like the touch screen in the kobo and the fact you can read epubs and not 
 
 Maybe I should look for alternative distros for kobo, .... 
 
-*I’m publishing this as part of 100 Days To Offload. You can join in yourself by visiting https://100daystooffload.com, post - 1/100*
+*I’m publishing this as part of 100 Days To Offload. You can join in yourself by visiting https://100daystooffload.com, post - 7/100*
 
 *Find other posts tagged  [#100DaysToOffload here](https://notes.rmhogervorst.nl/tags/100DaysToOffload/)*
 
