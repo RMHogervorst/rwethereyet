@@ -20,7 +20,7 @@ Here is how I see it. Some terms in the computing world have negative connotatio
 Being confronted with these words is yet another barrier to entry for underrepresented groups. 
 We chose these words in the past, and we can choose to use different words now. In fact some people
 who initially introduced these words openly say that they did not think it through when they created the default and are happy to see it change
-![Twitter thread 1, happy to change](/2020-06-15-naming-things-is-hard/index_files/image3.png).
+![Twitter thread 1, happy to change](post/2020-06-15-naming-things-is-hard/index_files/image3.png).
 
 
 Several large open source projects chose to use different words before. They moved away from {blacklist, whitelist} to {blocklist, allowlist} and changing {master, slave} to {primary, replica}. 
@@ -30,7 +30,7 @@ And if github changes their default for the main branch to 'main' in stead of 'm
 But I see very angry reactions from people that mostly fall in this category:
 
 In general we see this:
-![naming things is hard](/2020-06-15-naming-things-is-hard/index_files/image1.png)
+![naming things is hard](post/2020-06-15-naming-things-is-hard/index_files/image1.png)
 
 and this one:
 
