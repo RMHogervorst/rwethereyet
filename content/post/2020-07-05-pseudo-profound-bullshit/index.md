@@ -16,9 +16,9 @@ Today I'd like you all to go to [inspirobot.me](https://inspirobot.me/) and clic
 It is a beautiful website with random texts placed on inspiring landscapes, the background music is zen-like and once in a while you will hear a gong. It mimics the look and feel of every generic mindfulness app I have seen. 
 Here are some of the creations that made me laugh:
 
-![flame background with text ' be potentially unique'](/2020-07-05-pseudo-profound-bullshit/index_files/12PYdkxAJB.jpg)
+![flame background with text ' be potentially unique'](/post/2020-07-05-pseudo-profound-bullshit/index_files/12PYdkxAJB.jpg)
 
-!['sacrificing education begins with changing the oceans'](/2020-07-05-pseudo-profound-bullshit/index_files/sacrifice_the_oceans.jpg)
+!['sacrificing education begins with changing the oceans'](/post/2020-07-05-pseudo-profound-bullshit/index_files/sacrifice_the_oceans.jpg)
 
 Most of what the bots says seems deep and wise, untill you start to think about 
 what it actually means. This is a well known psychological phenomenon: 'pseudo profound bullshit'. Now bullshitting (BS) is not lying. 
@@ -44,12 +44,12 @@ I think we should be careful with these 'profound' sounding quotes, you don't ha
 
 Or inoculate yourself against wise sounding quotes by visiting inspirobot to train your BS-detector:
 
-!['retarded starvation'](/2020-07-05-pseudo-profound-bullshit/index_files/screenshot1.jpg)
+!['retarded starvation'](/post/2020-07-05-pseudo-profound-bullshit/index_files/screenshot1.jpg)
 
-![A story of a tailor that makes no sense at all](/2020-07-05-pseudo-profound-bullshit/index_files/dubiuos_tailor.jpg)
+![A story of a tailor that makes no sense at all](/post/2020-07-05-pseudo-profound-bullshit/index_files/dubiuos_tailor.jpg)
 
 And I'll leave you with the following words of wisdom:
-!['Accept mindfullness, start your own cult'](/2020-07-05-pseudo-profound-bullshit/index_files/qjepYw0MJn.jpg)
+!['Accept mindfullness, start your own cult'](/post/2020-07-05-pseudo-profound-bullshit/index_files/qjepYw0MJn.jpg)
 
  
 ### I want to know more!
