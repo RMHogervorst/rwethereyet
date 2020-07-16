@@ -71,7 +71,8 @@ issue anymore, at least not for R 3.6, 4.0 and 4.1 (at the time of writing).
 
 ### References
 - Find more polished R tutorials by me in [this tutorial overview page on my main blog feed](https://blog.rmhogervorst.nl//tags/tutorial/)
-- [latest lightgbm page (specific link to mac part)](https://lightgbm.readthedocs.io/en/latest/R/index.html#mac-os-preparation)
+- [catboost installation documentation for R](https://catboost.ai/docs/concepts/r-installation.html)
+- [location for downloading releases](https://github.com/catboost/catboost/releases)
 - [RSwitch tool](https://rud.is/rswitch/)
 - find other posts about these gradient boosted tree methods on this website under the tag [boostedtreemethods](https://notes.rmhogervorst.nl/tags/boostedtreemethods/)
 
