@@ -33,10 +33,10 @@ weight = 4
     name = "twitter"
     url = "https://twitter.com/roelmhogervorst"
 [[menu.main]]
-    name="my personal inspiration + visualisation feed on pinboard"
+    name="my personal (public) inspiration + visualisation feed on pinboard"
     url="https://pinboard.in/u:rmhogervorst/t:inspiration/t:visualisation/"
 
 
 [params]
-description = "A website built through Hugo and blogdown."
+description = "A website built through Hugo and blogdown, deployed through netlify"
 #footer = "&copy; [Yihui Xie](https://yihui.name) 2017 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
