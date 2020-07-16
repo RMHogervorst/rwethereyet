@@ -92,11 +92,23 @@ It now installs in
 
 And you are done.
 
+### How to install lightgbm with renv
+[renv](https://rstudio.github.io/renv/index.html) builds a separate library
+for your project. This is cool, because it allows you to use different packages
+that do not influence each other. However starting a new project with renv
+does not have lightgbm installed. 
+
+I've found the easiest is to use `setwd()` in your R console to move to the 
+`LightGBM` folder and then `ssource("build_r.R")` this will build the package
+again and place it in the correct library.
+
+
 # Fin
 I thought there would be issues with different versions of R, but the main issues
 are related to architecture: system libraries that you have to install on macos.
 After this installation the installation of the R wrapper is not really a big
 issue anymore, at least not for R 3.6, 4.0 and 4.1 (at the time of writing).
+
 
 ### References
 - Find more polished R tutorials by me in [this tutorial overview page on my main blog feed](https://blog.rmhogervorst.nl//tags/tutorial/)
