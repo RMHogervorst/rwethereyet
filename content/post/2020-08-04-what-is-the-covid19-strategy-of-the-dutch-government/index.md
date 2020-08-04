@@ -82,3 +82,5 @@ So what is the strategy here? I don't know, the future might tell us more.
 *I’m publishing this as part of 100 Days To Offload. You can join in yourself by visiting https://100daystooffload.com, post - 29/100*
 
 *Find other posts tagged  [#100DaysToOffload here](https://notes.rmhogervorst.nl/tags/100DaysToOffload/)*
+
+<span>Photo by <a href="https://unsplash.com/@boab?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mark Fletcher-Brown</a> on <a href="https://unsplash.com/s/photos/strategy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
