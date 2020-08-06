@@ -9,9 +9,10 @@ tags:
   - 100DaysToOffload
   - stoic
   - music
+  - 1997
 subtitle: 'Bangers reminiscent of ancient Rome: dichotomy of control'
 ---
-In 1997 the Brittish band Chumbawamba dropped a banger on the dancefloors: 'Tubthumbing'. 
+In 1997 the British band Chumbawamba dropped a banger on the dancefloors: 'Tubthumbing'. 
 They exclaimed that although they were knocked down, they would get up again. 
 
 ![](screenshot.png)
