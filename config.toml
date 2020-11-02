@@ -2,7 +2,7 @@ theme = "hugo-xmin"
 baseURL = "https://notes.rmhogervorst.nl/"
 languageCode = "en-us"
 title = "A braindump of unfinished ideas that are just not there yet"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "index\\.html"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "index\\.html", "\\.knit\\.md$", "\\.utf8\\.md$"]
 preserveTaxonomyNames = false
 footnotereturnlinkcontents = "↩"
 
@@ -30,6 +30,9 @@ weight = 4
     name = "Subscribe"
     url = "/index.xml"
 [[menu.main]]
+    name = "Search"
+    url = "/search/"
+[[menu.main]]
     name = "twitter"
     url = "https://twitter.com/roelmhogervorst"
 [[menu.main]]
@@ -40,3 +43,6 @@ weight = 4
 [params]
 description = "A website built through Hugo and blogdown, deployed through netlify"
 #footer = "&copy; [Yihui Xie](https://yihui.name) 2017 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+
+[outputs]
+   home = [ "HTML", "JSON" ]
