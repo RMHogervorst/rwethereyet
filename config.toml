@@ -6,6 +6,15 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "index\\.html", "\\.knit\\
 preserveTaxonomyNames = false
 footnotereturnlinkcontents = "↩"
 
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+    footnote = true
+
+    [markup.goldmark.renderer]
+    unsafe = false
+
 [permalinks]
 post = "/post/:year/:month/:day/:slug/"
 note = "/note/:year/:month/:day/:slug/"
