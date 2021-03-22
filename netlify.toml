@@ -4,10 +4,10 @@
   publish = "public"
 
 [context.production.environment]
-  HUGO_VERSION = "0.69.0"
+  HUGO_VERSION = "0.82.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.69.0"
+  HUGO_VERSION = "0.82.0"
 

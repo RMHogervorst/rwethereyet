@@ -1,7 +1,7 @@
 if (file.exists("~/.Rprofile")) {
   base::sys.source("~/.Rprofile", envir = environment())
 }
-
+options(blogdown.hugo.version = "0.82.0")
 options(blogdown.new_bundle = TRUE)
 options(
   blogdown.author = "Roel M. Hogervorst",
