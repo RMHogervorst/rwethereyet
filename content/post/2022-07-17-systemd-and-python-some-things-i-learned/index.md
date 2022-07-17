@@ -14,7 +14,7 @@ tags:
 
 I have a small computer that I run a python program on. I want to have it run automatically. (the program in question doesn't really matter but it is dagster)
 
-![]("/images/wocintech.jpg")
+![](/images/wocintech.jpg "three woman with laptops explaining stuff")
 
 Anyway I had some weird issues and because I am sure I will forget this again in the future, here it is for the future:
 
