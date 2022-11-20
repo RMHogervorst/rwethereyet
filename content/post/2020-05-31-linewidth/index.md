@@ -4,12 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-05-31'
 slug: linewidth
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - programming
   - python
-subtitle: ''
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 It seems the linewidth wars are starting up again. 

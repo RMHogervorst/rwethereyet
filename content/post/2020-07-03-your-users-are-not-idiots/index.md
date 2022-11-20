@@ -4,12 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-07-03'
 slug: your-users-are-not-idiots
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - users
   - ability-bias
   - design
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'Maybe you did not do a good enough design job'
 ---
 

@@ -4,12 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-10-13'
 slug: science-communication-through-clothes
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - hardware
   - clothing
-subtitle: ''
+  - inspiration
+difficulty:
+  - beginner
+post-type:
+  - link
 ---
 
 Dr Irene Suarez-Martinez [(@IreneSuaMar)](https://mobile.twitter.com/IreneSuaMar)
@@ -23,4 +27,4 @@ I think it looks really cool, there is only one flaw:
 It has not pockets. The fabric was too thick. 
 
 
-Find other posts tagged inspiration [here](https://notes.rmhogervorst.nl/categories/inspiration/)
+Find other posts tagged inspiration [here](https://notes.rmhogervorst.nl/tags/inspiration/)

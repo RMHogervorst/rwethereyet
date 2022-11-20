@@ -4,13 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-10-06'
 slug: uk-covid-excel-disaster-bad-management
 categories:
-  - thoughts
+  - blog
 tags:
   - excel
   - 100DaysToOffload
   - COVID19
   - Coronavirus
-subtitle: ''
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 ---
 
 So yesterday there was big news, according to the BBC there was a

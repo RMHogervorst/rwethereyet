@@ -4,13 +4,18 @@ author: Roel M. Hogervorst
 date: '2019-05-03'
 slug: alternative-vizualisation-a-clock-that-shows-digital-time-with-the-sun
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - sun
   - 3dprinting
   - hacks
   - physical
+  - inspiration
+difficulty:
+    - advanced
+post-type:
+    - link
 ---
 
 You have to be a genius to think this through:

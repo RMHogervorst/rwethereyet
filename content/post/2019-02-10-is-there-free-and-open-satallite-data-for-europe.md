@@ -4,11 +4,17 @@ author: Roel M. Hogervorst
 date: '2019-02-10'
 slug: is-there-free-and-open-satallite-data-for-europe
 categories:
-  - inspiration
-  - question
+  - blog
+  - R
 tags:
   - images
   - package
+  - inspiration
+  - question
+difficulty:
+  - intermediate
+post-type:
+  - post
 ---
 
 

@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-11-03'
 slug: hardware-for-status
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
   - hardware
-subtitle: ''
+subtitle: 'using something else then your keyboard'
+difficulty:
+  - advanced
+post-type:
+  - thoughts
 ---
 
 Over at hackaday.com 2 months back this beautiful elegant status switching
@@ -32,8 +36,8 @@ like this (according to my recollection, which is not all to reliable):
 - and that status is then also communicated in an application that is visible for everyone (like a status emoji or something)
 
 
-I believe they found that because it is a nice physical object people were more likely to use it. And because the signal was a reliable indicator, people were not interupted during their concentration time, and were interupted when they wanted it
+I believe they found that because it is a nice physical object people were more likely to use it. And because the signal was a reliable indicator, people were not interupted during their concentration time, and were interrupted when they wanted it
 
 So I guess physical tokens are really useful!
 
-Find other posts tagged inspiration [here](https://notes.rmhogervorst.nl/categories/inspiration/)
+Find other posts tagged inspiration [here](https://notes.rmhogervorst.nl/tags/inspiration/)

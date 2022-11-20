@@ -3,10 +3,14 @@ title: Making your Videocalls Better
 author: Roel M. Hogervorst
 date: '2020-11-17'
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
 slug: making-your-videocalls-better
+difficulty:
+  - intermediate
+post-type:
+  - post
 ---
 
 A collection of things to make your videocalls better:

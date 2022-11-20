@@ -3,14 +3,19 @@ title: Cultivating a News Feed
 author: Roel M. Hogervorst
 date: '2020-07-04'
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - curating-content
   - doomscrolling
   - news
+  - inspiration
 slug: cultivating-a-news-feed
 subtitle: For fun
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 I've been on twitter for almost 10 years, but I never really used the lists. I discovered that

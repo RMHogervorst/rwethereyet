@@ -4,12 +4,18 @@ author: Roel M. Hogervorst
 date: '2020-11-16'
 slug: good-software-design-constrains-users-but-can-give-freedom-too
 categories:
-  - thoughts
+  - R
+  - blog
 tags:
   - 100DaysToOffload
   - tidyverse
   - R
-subtitle: ''
+  - design
+  - software
+difficulty:
+  - advanced
+post-type:
+  - thoughts
 ---
 
 I've been thinking about design of software and the function of constraints.

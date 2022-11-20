@@ -3,12 +3,16 @@ title: Anti Library
 author: Roel M. Hogervorst
 date: '2020-11-03'
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - reading
   - write
   - inspiration
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 slug: anti-library
 ---
 

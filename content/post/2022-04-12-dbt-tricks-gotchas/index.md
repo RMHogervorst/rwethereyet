@@ -4,10 +4,15 @@ author: Roel M. Hogervorst
 date: '2022-04-12'
 slug: dbt-tricks-gotchas
 categories:
-  - lessons-learned
+  - blog
 tags:
   - dbt
   - sql
+  - testing
+difficulty:
+  - beginner
+post-type:
+  - lessons-learned
 ---
 
 I've been working with dbt lately and I love that project and all it enables.

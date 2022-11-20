@@ -4,13 +4,18 @@ author: Roel M. Hogervorst
 date: '2019-02-10'
 slug: a-bot-that-tweets-old-articles-on-your-timeline
 categories:
-  - inspiration
+  - blog
 tags:
   - twitter
   - bot
   - go
   - AWS
   - lambda
+  - inspiration
+difficulty:
+  - intermediate
+post-type:
+  - link
 ---
 
 Awesome coder Vicki Lai created a twitter bot for her website that regularly

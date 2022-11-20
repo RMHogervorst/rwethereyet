@@ -4,7 +4,7 @@ author: Roel M. Hogervorst
 date: '2021-05-06'
 slug: equal-streetnames-project
 categories:
-  - inspiration
+  - blog
 tags:
   - feminism
   - inspiration
@@ -12,6 +12,10 @@ tags:
   - wikidata
   - Leiden
   - maps
+difficulty:
+  - beginner
+post-type:
+  - walkthrough
 ---
 
 This weekend I played around on the intersection of open streetmap (OSM) and wikidata. Two awesome projects with open data! The project is called [equalstreetnames](https://equalstreetnames.be/) 

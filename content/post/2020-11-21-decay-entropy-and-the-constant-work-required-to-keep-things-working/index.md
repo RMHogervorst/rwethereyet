@@ -4,11 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-11-21'
 slug: decay-entropy-and-the-constant-work-required-to-keep-things-working
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - software
-subtitle: ''
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 

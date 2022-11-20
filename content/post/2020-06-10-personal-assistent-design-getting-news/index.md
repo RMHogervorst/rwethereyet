@@ -4,12 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-06-10'
 slug: personal-assistent-design-getting-news
 categories:
-  - other
+  - blog
 tags:
   - personal assistant
   - 100DaysToOffload
   - communication
-subtitle: ''
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 ---
 
 I would love it if my personal assistent could read and select news for me. 

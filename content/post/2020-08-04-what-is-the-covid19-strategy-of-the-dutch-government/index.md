@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-08-04'
 slug: what-is-the-covid19-strategy-of-the-dutch-government
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - COVID19
   - Coronavirus
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'Let us hope the hospitals will survive?'
 ---
 

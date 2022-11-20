@@ -4,9 +4,15 @@ author: Roel M. Hogervorst
 date: '2021-05-27'
 slug: love-death-and-robots
 categories:
-  - inspiration
+  - blog
 tags:
   - scifi
+  - inspiration
+  - recommendation
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 ---
 
 I really enjoy 'love death and robots' on Netflix.! All the episodes are different

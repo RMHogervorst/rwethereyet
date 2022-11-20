@@ -4,12 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-10-20'
 slug: experiments-in-presentation-software
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
   - visualisation
   - presentations
-subtitle: ''
+difficulty:
+  - intermediate
+post-type:
+  - blog
 ---
 Matt Webb [@genmon](https://twitter.com/genmon) shows us some experiments in
 interactive presentations. 

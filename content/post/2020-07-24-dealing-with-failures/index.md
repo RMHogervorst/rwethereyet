@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-07-24'
 slug: dealing-with-failures
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - stoic
   - fails
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'The universe does not bow to your wishes'
 ---
 
@@ -30,7 +34,7 @@ invite me back. It was mostly random change (many applicants), and they made
 some assumptions about me that were not true. I was really really disappointed. 
 There are not many jobs like this and so I really wanted to get in.
 
-So tis post deals with the question 'how to deal with this feeling of failure and disappointment'. 
+So this post deals with the question 'how to deal with this feeling of failure and disappointment'. 
 I think this falls
 into the Stoic idea of 'dichotomy of control': Some things are under our control,
 others are not. I have been reading 'How to be a Stoic' by Massimo Pigliucci and

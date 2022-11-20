@@ -3,11 +3,15 @@ title: Covid19 Collection of Unsplash
 author: Roel M. Hogervorst
 date: '2020-10-27'
 categories:
-  - inspiration
+  - blog
 tags:
   - images
   - inspiration
 slug: covid19-collection-of-unsplash
+difficulty:
+  - beginner
+post-type:
+  - link
 ---
 
 Check out this collection of COVID19 related images on unsplash

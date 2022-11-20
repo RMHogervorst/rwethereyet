@@ -4,18 +4,20 @@ author: Roel M. Hogervorst
 date: '2019-09-19'
 slug: delft-ai-meetup-ai-for-intelligent-vehicles
 categories:
-  - thoughts
-  - other
-  - inspiration
+  - blog
 tags:
   - data science
   - ADAS
   - autonomous cars
   - AI
+  - inspiration
+difficulty:
+    - beginner
+    - intermediate
+    - advanced
+post-type:
+    - thoughts
 ---
-
-SOME SORT OF INTRO THAT SHOWS UP
-
 
 I was at the [Delft Ai meetup](https://www.meetup.com/delft-ai-meetup
 ) an initiative of the Computer science department

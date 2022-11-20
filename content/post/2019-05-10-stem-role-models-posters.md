@@ -4,10 +4,16 @@ author: Roel M. Hogervorst
 date: '2019-05-10'
 slug: stem-role-models-posters
 categories:
-  - inspiration
-  - communication
+  - blog
 tags:
   - examples
+  - inspiration
+  - communication
+  - images
+difficulty:
+    - beginner
+post-type:
+    - link
 ---
 
 

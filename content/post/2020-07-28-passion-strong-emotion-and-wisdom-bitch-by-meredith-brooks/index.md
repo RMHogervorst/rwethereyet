@@ -4,13 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-07-28'
 slug: passion-strong-emotion-and-wisdom-bitch-by-meredith-brooks
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - stoic
   - music
   - 1997
-subtitle: ''
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 It was 1997, I was hearing this song on the radio every day. 

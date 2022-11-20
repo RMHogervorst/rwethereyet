@@ -4,10 +4,17 @@ author: Roel M. Hogervorst
 date: '2021-04-22'
 slug: adventures-in-2fa-with-a-phone-company
 categories:
-  - thoughts
+  - blog
 tags:
   - 2fa
+  - rant
+  - security
 subtitle: 'Save your valuables elsewhere'
+difficulty:
+  - beginner
+post-type:
+  - thoughts
+  - lessons-learned
 ---
 
 So this happened to me.

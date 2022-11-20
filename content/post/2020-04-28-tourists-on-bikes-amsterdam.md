@@ -4,9 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-04-28'
 subtitle: 'I bike all the time, why are Dutch people so annoyed with me?'
 categories:
-  - thoughts
+  - blog
 tags:
   - bikes
+  - rant
+difficulty:
+  - beginner
+post-type:
+- thoughts
 ---
 
 I think that for many tourists in the Netherlands riding around on a bike is traumatic. 

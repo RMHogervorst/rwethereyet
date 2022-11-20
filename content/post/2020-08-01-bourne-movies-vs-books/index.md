@@ -4,12 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-08-01'
 slug: bourne-movies-vs-books
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - books
   - movies
-subtitle: ''
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 ---
 
 I found the Bourne books (Bourne Identity/ Bourne Supremacy / Bourne Ultimatum) 

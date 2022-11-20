@@ -3,8 +3,11 @@ title: African Movie Posters, Created without Seeing the Movie
 author: Roel M. Hogervorst
 date: '2020-05-01'
 categories:
-  - inspiration
-  - linkpost
+  - blog
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 tags:
   - movies
   - twitter

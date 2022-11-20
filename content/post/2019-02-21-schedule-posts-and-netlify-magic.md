@@ -4,13 +4,17 @@ author: Roel M. Hogervorst
 date: '2019-02-21'
 slug: schedule-posts-and-netlify-magic
 categories:
-  - other
+  - blog
 tags:
   - hacks
   - netlify
   - ifttt
   - webhooks
   - magic
+difficulty:
+  - intermediate
+post-type:
+  - walkthrough
 ---
 
 This is a quick hack that I did not realize actually worked.

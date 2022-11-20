@@ -4,12 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-08-02'
 slug: actors-how-do-they-do-it
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - movies
   - tvseries
-subtitle: ''
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 I am currently watching 'Travellers' on Netflix and I will not spoil the series

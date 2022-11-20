@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-08-08'
 slug: this-100daystooffload-is-feeding-my-bad-habits
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
-  - write
+  - writing
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 subtitle: ''
 ---
 

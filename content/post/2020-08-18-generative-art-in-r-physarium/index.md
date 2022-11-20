@@ -3,13 +3,17 @@ title: 'Generative Art in R: Physarium'
 author: Roel M. Hogervorst
 date: '2020-08-18'
 categories:
-  - inspiration
+  - blog
 tags:
   - art
   - generative_art
   - inspiration
   - r
   - visualisation
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 slug: generative-art-in-r-physarium
 ---
 I don't know how, but I stumbled upon this [blogpost](https://fronkonstin.com/2020/08/11/abstractions/) by

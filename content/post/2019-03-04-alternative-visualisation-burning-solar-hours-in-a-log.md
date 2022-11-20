@@ -4,10 +4,15 @@ author: Roel M. Hogervorst
 date: '2019-03-04'
 slug: alternative-visualisation-burning-solar-hours-in-a-log
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - physical
+  - inspiration
+difficulty:
+  - advanced
+post-type:
+    - post
 ---
 
 

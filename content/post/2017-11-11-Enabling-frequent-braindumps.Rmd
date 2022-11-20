@@ -4,7 +4,13 @@ author: Roel M. Hogervorst
 date: "2017-11-11"
 categories:
   - R
-tags: [idea]
+tags:
+    - idea
+    - writing
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +23,7 @@ I have the same idea and will put up a lot of not yet prettified ideas online.
 
 This will be just small snippets and ideas.
 
-> Things that are still on your computer are approximetly useless
+> Things that are still on your computer are approximately useless
 
 [tweet (2017-11-03) by Amelia McNamara citing David Robinson @drob](https://twitter.com/AmeliaMN/status/926509282874585089)
 

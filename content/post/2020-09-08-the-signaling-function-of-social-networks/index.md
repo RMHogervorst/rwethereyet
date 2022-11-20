@@ -3,10 +3,14 @@ title: The Signaling Function of Social Networks
 author: Roel M. Hogervorst
 date: '2020-09-08'
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
   - mental_models
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 slug: the-signaling-function-of-social-networks
 ---
 Julian Lehr [(@lehrjulian)](https://twitter.com/lehrjulian) [writes about

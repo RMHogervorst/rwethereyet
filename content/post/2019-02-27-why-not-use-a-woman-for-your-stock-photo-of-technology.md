@@ -4,10 +4,15 @@ author: Roel M. Hogervorst
 date: '2019-02-27'
 slug: why-not-use-a-woman-for-your-stock-photo-of-technology
 categories:
-  - inspiration
+  - blog
 tags:
   - photos
   - images
+  - inspiration
+difficulty:
+    - beginner
+post-type:
+- link
 ---
 
 Yes! Finally some pictures of women with technology! 

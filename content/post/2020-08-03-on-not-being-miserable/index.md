@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-08-03'
 slug: on-not-being-miserable
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - emotion
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'Some things are very much under your control'
 ---
 

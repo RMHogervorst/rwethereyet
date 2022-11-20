@@ -4,11 +4,16 @@ author: Roel M. Hogervorst
 date: '2019-05-07'
 slug: alternative-worldmap-projection-butterfly
 categories:
-  - inspiration
+  - blog
 tags:
   - worldmap
   - projection
   - visualisation
+  - inspiration
+difficulty:
+  - intermediate
+post-type:
+    - post
 ---
 
 A very nice alternative world projection, the butterfly projection.

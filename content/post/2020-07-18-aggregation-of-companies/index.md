@@ -4,10 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-07-18'
 slug: aggregation-of-companies
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - Netherlands
+  - innovation
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'Innovation Clustering Can be steered'
 ---
 

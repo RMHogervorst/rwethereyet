@@ -4,10 +4,17 @@ author: Roel M. Hogervorst
 date: '2020-06-15'
 slug: naming-things-is-hard
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - naming
+  - branch
+  - github
+  - fairness
+difficulty:
+  - simple
+post-type:
+  - thoughts
 subtitle: 'words matter'
 ---
 

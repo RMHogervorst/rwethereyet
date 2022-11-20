@@ -4,10 +4,15 @@ author: Roel M. Hogervorst
 date: '2019-09-10'
 slug: cool-dataviz-ideas-from-scotland
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - historic
+  - inspiration
+difficulty:
+    - intermediate
+post-type:
+    - post
 ---
 
 I was in Scotland recently and in the Glasgow
@@ -15,7 +20,7 @@ university Museum (the Hunterian) I found an amazing visualisation from 1848
 
 ![PV curve Hunterian](pv_curve_hunterian.png)
 
-This is literally a 3d model, created by James Thomson the brother of [Lord Kelvin](). From the sign in the museum: This is a visualisation of a mathematic model that shows the link between pressure and freezing point for carbonic acid and is based on measured data.
+This is literally a 3d model, created by James Thomson the brother of [Lord Kelvin](https://en.wikipedia.org/wiki/William_Thomson,_1st_Baron_Kelvin). From the sign in the museum: This is a visualisation of a mathematic model that shows the link between pressure and freezing point for carbonic acid and is based on measured data.
 
 - [Collection of Lord Kelvin's work, where I found this awesome visual ](https://www.gla.ac.uk/hunterian/collections/permanentdisplays/lordkelvin/#d.en.199543)
 

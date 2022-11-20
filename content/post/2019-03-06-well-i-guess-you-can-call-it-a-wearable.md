@@ -4,11 +4,16 @@ author: Roel M. Hogervorst
 date: '2019-03-06'
 slug: well-i-guess-you-can-call-it-a-wearable
 categories:
-  - inspiration
+  - blog
 tags:
   - physical
   - wearable
   - clothing
+  - inspiration
+difficulty:
+  - intermediate
+post-type:
+  - link
 ---
 
 

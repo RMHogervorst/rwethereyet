@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-05-31'
 slug: people-crave-the-familiar-yet-seek-the-novel
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - creativity
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 subtitle: 'From fidget spinners and big data to data science'
 ---
 

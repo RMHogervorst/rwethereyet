@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2019-02-23'
 slug: pushover-netlify-fails
 categories:
-  - other
+  - blog
 tags:
   - netlify
   - pushover
   - ifttt
+difficulty:
+  - intermediate
+post-type:
+  - tutorial
 ---
 
 In [my previous post about netlify](https://notes.rmhogervorst.nl/post/2019/02/21/schedule-posts-and-netlify-magic/) I showed how you can automatically rebuild your hugo blog

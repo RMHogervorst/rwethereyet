@@ -3,14 +3,20 @@ title: Stats Terminology and Computer Science
 author: Roel M. Hogervorst
 date: '2020-07-22'
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - data science
-  - write
+  - writing
+difficulty:
+  - advanced
+post-type:
+  - thoughts
+  - clarification
 slug: stats-terminology-and-computer-science
-subtitle: Words matter, terms too
+subtitle: "Words matter, terms too"
 ---
+
 I am thinking about the meaning of specific terms and confusing things are for
 new people in Data Science. 
 I came into data science from psychology. Although psychology is quite statistics

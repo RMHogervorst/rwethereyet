@@ -4,11 +4,16 @@ author: Roel M. Hogervorst
 date: '2019-02-20'
 slug: alternative-visualisation-3d-printed-plot
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - 3dprinting
   - rayshader
+  - inspiration
+difficulty:
+  - advanced
+post-type:
+  - link
 ---
 
 Joachim Gassen ([twitter](https://twitter.com/JoachimGassen)) tweeted last year:

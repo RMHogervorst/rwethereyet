@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-08-25'
 slug: wearable-computing
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
   - hardware
+difficulty:
+  - advanced
+post-type:
+  - thoughts
 subtitle: 'putting the computing screen on the eyeball'
 ---
 Timothy Vladimír Hobbs a programmer and builder from the Czech Republic 

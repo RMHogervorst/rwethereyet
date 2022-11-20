@@ -4,11 +4,17 @@ author: Roel M. Hogervorst
 date: '2019-05-06'
 slug: beautiful-sawed-through-components
 categories:
-  - inspiration
+  - blog
 tags:
   - idea
   - images
   - photos
+  - inspiration
+  - visualisation
+difficulty:
+  - intermediate
+post-type:
+    - link
 ---
 
 Found this on twitter:

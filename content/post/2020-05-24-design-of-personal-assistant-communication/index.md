@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-05-24'
 slug: design-of-personal-assistant-communication
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - personal assistant
   - communication
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 subtitle: 'Communication is between people, not between accounts'
 ---
 

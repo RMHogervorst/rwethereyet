@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-09-22'
 slug: all-the-euro-note-bridges
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
-  - hardware
+  - physical
   - Netherlands
+difficulty:
+  - beginner
+post-type:
+  - link
 subtitle: ''
 ---
 

@@ -3,15 +3,19 @@ title: Christmas Fever Bot
 author: Roel M. Hogervorst
 date: '2020-12-04'
 categories:
-  - inspiration
-  - linkpost
+  - blog
 tags:
   - bot
   - electronics
   - hackaday
   - hacks
   - realworld
+  - inspiration
 slug: christmas-fever-bot
+difficulty:
+  - beginner
+post-type:
+  - link
 ---
 
 Last year hackaday found this [project](https://hackaday.com/2019/12/24/tiny-tree-is-a-thermometer-for-christmas-fever/).
@@ -21,11 +25,5 @@ They always have the most amazing finds. The post links to a [youtube video](htt
 
 It is a bot that checks google trends for the popularity of the word 'Christmas'. That popularity is used to drive the leds in this small christmas tree. More popular, is more bright! 
 
-<!--
-I found [this here]
 
-image preview 
-
-what was so inspiring -->
-
-Find other posts tagged inspiration [here](https://notes.rmhogervorst.nl/categories/inspiration/)
+Find other posts tagged inspiration [here](https://notes.rmhogervorst.nl/tags/inspiration/)

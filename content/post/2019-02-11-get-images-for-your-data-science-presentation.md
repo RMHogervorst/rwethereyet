@@ -1,12 +1,18 @@
 ---
 title: Get images for your data science presentation
+subtitle: "Free and usable images"
 author: Roel M. Hogervorst
 date: '2019-02-11'
 slug: get-images-for-your-data-science-presentation
 categories:
-  - inspiration
+  - blog
 tags:
   - images
+  - inspiration
+difficulty:
+  - beginner
+post-type:
+  - link
 ---
 
 You know the drill, you need some images for in your presentation.

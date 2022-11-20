@@ -4,13 +4,17 @@ author: Roel M. Hogervorst
 date: '2020-08-06'
 slug: virtual-insanity-as-a-stoic-meditation
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - music
   - 1997
   - stoic
   - tuphos
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'over consumption as a choice'
 ---
 

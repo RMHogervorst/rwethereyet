@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-08-12'
 slug: science-magazines-six-months-of-pandemic-photography
 categories:
-  - linkpost
+  - blog
 tags:
   - COVID19
   - photos
+difficulty:
+  - beginner
+post-type:
+  - link
 ---
 
 Today, see this: 

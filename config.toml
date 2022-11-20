@@ -34,7 +34,11 @@ note = "/note/:year/:month/:day/:slug/"
 [[menu.main]]
     name = "Tags"
     url = "/tags/"
-weight = 4
+    weight = 4
+[[menu.main]]
+    name = "Post type"
+    url = "/post-type/"
+    weight = 4
 [[menu.main]]
     name = "Subscribe"
     url = "/index.xml"
@@ -42,8 +46,8 @@ weight = 4
     name = "Search"
     url = "/search/"
 [[menu.main]]
-    name = "twitter"
-    url = "https://twitter.com/roelmhogervorst"
+    name = "mastodon"
+    url = "https://mastodon.world/@rmhogervorst"
 [[menu.main]]
     name="my personal (public) inspiration + visualisation feed on pinboard"
     url="https://pinboard.in/u:rmhogervorst/t:inspiration/t:visualisation/"
@@ -55,3 +59,9 @@ description = "A website built through Hugo and blogdown, deployed through netli
 
 [outputs]
    home = [ "HTML", "JSON" ]
+
+[taxonomies]
+   category = 'categories'
+   tag = 'tags'
+   post-type = 'post-type'
+   difficulty = 'difficulty'

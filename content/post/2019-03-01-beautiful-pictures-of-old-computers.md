@@ -4,9 +4,15 @@ author: Roel M. Hogervorst
 date: '2019-03-01'
 slug: beautiful-pictures-of-old-computers
 categories:
-  - inspiration
+  - blog
 tags:
   - photos
+  - inspiration
+  - history
+difficulty:
+    - beginner
+post-type:
+  - link
 ---
 
 

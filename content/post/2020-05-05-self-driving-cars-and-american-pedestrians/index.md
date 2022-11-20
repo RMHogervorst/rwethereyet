@@ -4,6 +4,10 @@ author: Roel M. Hogervorst
 date: '2020-05-05'
 slug: self-driving-cars-and-american-pedestrians
 categories:
+  - blog
+difficulty:
+  - beginner
+post-type:
   - thoughts
 tags:
   - autonomous cars

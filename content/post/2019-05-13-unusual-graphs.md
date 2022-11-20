@@ -4,9 +4,14 @@ author: Roel M. Hogervorst
 date: '2019-05-13'
 slug: unusual-graphs
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
+  - inspiration
+difficulty:
+    - beginner
+post-type:
+ - link
 ---
 
 On twitter [@kleinmatic](https://twitter.com/kleinmatic "Scott Klein twitter") asks for unconventional vizualisations:

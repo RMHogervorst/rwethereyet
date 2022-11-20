@@ -4,10 +4,15 @@ author: Roel M. Hogervorst
 date: '2019-02-28'
 slug: using-your-whole-arm-as-a-screen
 categories:
-  - inspiration
+  - blog
 tags:
   - 3dprinting
   - physical
+  - inspiration
+difficulty:
+    - beginner
+post-type:
+  - link
 ---
 
 According to [Jean-Baptiste Lefevre](https://twitter.com/jblefevre60/status/1060898805552504833)

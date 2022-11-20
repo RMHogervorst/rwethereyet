@@ -2,9 +2,24 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 author: Roel M. Hogervorst
 date: {{ .Date }}
-categories: []
+categories:
+    - blog
+    - R
 tags: []
 subtitle: ""
+difficulty:
+  - beginner
+  - intermediate
+  - advanced
+post-type:
+  - post
+  - clarification
+  - tutorial
+  - walkthrough
+  - linkpost
+  - thoughts
+  - analysis
+  - lessons-learned
 ---
 
 <!--

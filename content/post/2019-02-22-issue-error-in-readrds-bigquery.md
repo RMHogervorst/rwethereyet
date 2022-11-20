@@ -10,6 +10,10 @@ tags:
   - bigquery
   - readrds
   - error
+difficulty:
+    - advanced
+post-type:
+  - lessons-learned
 ---
 
 I had a problem with bigrquery that I couldn't figure out.

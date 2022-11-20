@@ -4,7 +4,12 @@ author: Roel M. Hogervorst
 date: '2022-09-03'
 slug: all-run-requests-from-one-sensortick-use-the-same-container-image
 categories:
+    - blog
+difficulty:
+  - intermediate
+post-type:
   - lessons-learned
+subtitle: ""
 tags:
   - dagster
   - TIL
