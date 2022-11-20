@@ -4,13 +4,17 @@ author: Roel M. Hogervorst
 date: '2020-12-03'
 slug: ai-incident-database
 categories:
-  - linkpost
+  - blog
 tags:
   - AI
   - fails
   - machinelearning
   - inspiration
 subtitle: "Learning from mistakes, other people's mistakes."
+difficulty:
+  - advanced
+post-type:
+  - link
 ---
 
 I found this database of AI incidents. 

@@ -4,13 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-11-02'
 slug: adding-static-search-to-page
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - search
   - javascript
   - hugo
-subtitle: ''
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 ![a loupe on a macbook, because why not](agence-olloweb-d9ILr-dbEdg-unsplash.jpg)

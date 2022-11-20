@@ -4,11 +4,16 @@ author: Roel M. Hogervorst
 date: '2021-03-21'
 slug: what-you-don-t-collect-you-cannot-lose
 categories:
-  - thoughts
+  - blog
 tags:
   - dataset
   - decisions
   - data-minimalisation
+  - pre-mortem
+difficulty:
+  - beginner
+post-type:
+  - post
 ---
 
 Hello new startup or old company! You are going to lose at least a part of 

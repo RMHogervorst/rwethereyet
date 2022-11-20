@@ -4,13 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-06-11'
 slug: a-colored-dot-matrix-plot-for-music-overview
 categories:
-  - inspiration
-  - linkpost
+  - blog
 tags:
   - visualisation
   - music
   - Nightingale
-subtitle: ''
+  - inspiration
+difficulty:
+  - intermediate
+post-type:
+  - link
 share_img: '/2020-06-11-a-colored-dot-matrix-plot-for-music-overview/index_files/ranking_sketch.png'
 ---
 

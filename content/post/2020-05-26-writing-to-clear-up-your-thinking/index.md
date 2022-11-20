@@ -4,12 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-05-26'
 slug: writing-to-clear-up-your-thinking
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - Zotero
-  - 
-subtitle: ''
+difficulty:
+  - beginner
+post-type:
+  - link
 ---
 
 ![Photo by hannah grace on Unsplash <https://unsplash.com/photos/j9JoYpaJH3A> ](images/hannah-grace-j9JoYpaJH3A-unsplash.jpg)

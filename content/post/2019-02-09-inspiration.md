@@ -1,12 +1,17 @@
 ---
-title: Inspiration category
+title: Inspiration tag
 author: Roel M. Hogervorst
 date: '2019-02-09'
 slug: inspiration
 categories:
-  - inspiration
+  - blog
 tags:
   - explainer
+  - inspiration
+difficulty:
+  - beginner
+post-type:
+  - post
 ---
 
 
@@ -21,3 +26,5 @@ For instance:
 - look at these awesome inventions/inspiring thingys: <https://imgur.com/gallery/r37jBDz>
 
 ![](/images/house_underwater.jpg)
+
+And you can find all posts tagged with [inspiration here](https://notes.rmhogervorst.nl/tags/inspiration/).

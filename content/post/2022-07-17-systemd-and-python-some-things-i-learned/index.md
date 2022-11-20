@@ -4,12 +4,18 @@ author: Roel M. Hogervorst
 date: '2022-07-17'
 slug: systemd-and-python-some-things-i-learned
 categories:
-  - lessons-learned
+  - blog
 tags:
   - python
   - systemd
   - linux
   - dagster
+difficulty:
+  - beginner
+  - intermediate
+  - advanced
+post-type:
+  - lessons-learned
 ---
 
 I have a small computer that I run a python program on. I want to have it run automatically. (the program in question doesn't really matter but it is dagster)
@@ -29,7 +35,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'tail'
 
 This is weird because when I run this command in the terminal it just works.
 
-Cause: systemd does not have access to PATH like other pieces in ubuntu.
+**Cause**: systemd does not have access to PATH like other pieces in ubuntu.
 But you can add it.  by adding a `Environment=` directive to the service file.
 
 ```

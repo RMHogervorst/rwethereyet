@@ -4,12 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-11-24'
 slug: kinetic-art
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
   - hardware
   - art
 subtitle: 'Mechanical precision'
+difficulty:
+  - beginner
+post-type:
+  - link
 ---
 
 I found this tumblr filled with videos of kinetic art.

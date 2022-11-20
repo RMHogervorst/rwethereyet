@@ -3,7 +3,13 @@ title: 'Beer Production in USA: Distorting Shapes for Effect'
 author: Roel M. Hogervorst
 date: '2020-05-06'
 categories:
-  - inspiration
+  - blog
+difficulty:
+  - beginner
+  - intermediate
+  - advanced
+post-type:
+  - analysis
 tags:
   - cartogram
   - r

@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-06-16'
 slug: no-more-heroes
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
 subtitle: 'No more Heroes'
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 ---
 
 I've been thinking about this tweet recently

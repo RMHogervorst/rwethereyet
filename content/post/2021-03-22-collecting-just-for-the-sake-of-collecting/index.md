@@ -3,12 +3,18 @@ title: Collecting Just for the Sake of Collecting
 author: Roel M. Hogervorst
 date: '2021-03-22'
 slug: collecting-just-for-the-sake-of-collecting
+subtitle: 'can be harmful, and is usually stupid'
 categories:
-  - thoughts
+  - blog
 tags:
   - decisions
   - data-minimalisation
   - quantified-self
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
+  - lessons-learned
 ---
 
 ![airplane dials in a cockpit](mitchel-boot-hOf9BaYUN88-unsplash.jpg)

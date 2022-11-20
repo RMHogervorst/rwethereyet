@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-11-25'
 slug: changing-the-conversation-about-ai
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - machinelearning
-subtitle: ''
+  - robots
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 When I see headlines like: 'Uber cars run red lights during unauthorized 
@@ -19,8 +23,8 @@ by Jelle van Dijk, Abeba Birhane and Frank Pasquale that I could say what bother
 
 My main problems with these headlines are this:
 
-* There is no human responsible
-* We talk about an automatic system as if it has agency and will
+* There is no human responsible in the story
+* We talk about an automatic system as if it has **agency** and **free will**
 
 
 What I really liked about the presentation[^1] is that the authors make a very good case against

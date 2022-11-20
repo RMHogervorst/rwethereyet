@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-10-06'
 slug: experience-non-euclidian-geometry
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
   - video
   - visualisation
+difficulty:
+  - beginner
+post-type:
+  - link
 subtitle: 'It is just plain weird'
 ---
 
@@ -20,11 +24,6 @@ And an inverted sphere world here video here <https://www.youtube.com/watch?v=yY
 
 
 And his code can be found [here on github](https://github.com/HackerPoet/NonEuclidean)
-<!--
-I found [this here]
 
-image preview 
 
-what was so inspiring -->
-
-Find other posts tagged inspiration [here](https://notes.rmhogervorst.nl/categories/inspiration/)
+Find other posts tagged inspiration [here](https://notes.rmhogervorst.nl/tags/inspiration/)

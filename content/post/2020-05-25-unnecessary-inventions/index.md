@@ -4,11 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-05-25'
 slug: unnecessary-inventions
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
   - inventions
   - hardware
+  - 3dprinting
+difficulty:
+  - intermediate
+post-type:
+  - link
 subtitle: "I don't need it, but boy do I want those!"
 ---
 

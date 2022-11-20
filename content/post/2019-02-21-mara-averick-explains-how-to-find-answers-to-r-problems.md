@@ -4,10 +4,16 @@ author: Roel M. Hogervorst
 date: '2019-02-21'
 slug: mara-averick-explains-how-to-find-answers-to-r-problems
 categories:
-  - inspiration
+  - blog
   - R
 tags:
   - explainer
+  - inspiration
+  - debugging
+difficulty:
+    - beginner
+post-type:
+  - thoughts
 ---
 
 Mara Averick has a great presentation on how to find answers to 

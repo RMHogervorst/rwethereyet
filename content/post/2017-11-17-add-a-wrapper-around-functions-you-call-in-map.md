@@ -7,6 +7,12 @@ categories:
   - R
 tags:
   - hacks
+  - purrr
+difficulty:
+  - advanced
+post-type:
+  - lessons-learned
+subtitle: "and give yourself feedback"
 ---
 
 I recently wanted to download hundreds of files
@@ -39,7 +45,7 @@ map(paste0("first part of the link",
            formatC(1:latest_episode, width = 3,flag = 0),".txt"), download_file)
 ```
 
-**!!!! The bottleneck was here not in the repitition, but in me, I am not a patient man. I wrapped the same functionality around readr::read_lines and it was horribly slow!**
+**!!!! The bottleneck was here not in the repetition, but in me, I am not a patient man. I wrapped the same functionality around readr::read_lines and it was horribly slow!**
 
 example:
 

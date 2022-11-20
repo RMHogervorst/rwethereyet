@@ -4,13 +4,17 @@ author: Roel M. Hogervorst
 date: '2022-01-28'
 slug: little-gotchas-when-moving-to-dagster-from-airflow
 categories:
-  - other
+  - blog
 tags:
   - airflow
   - dagster
   - schedulers
   - python
   - data-engineering
+difficulty:
+  - intermediate
+post-type:
+  - lessons-learned
 ---
 
 I've been experimenting with [dagster](https://dagster.io/), an open source scheduler for 
@@ -18,7 +22,7 @@ data workflows. The product looks really slick and I enjoy working with it.
 Previously I've worked with Airflow but for this job I believe dagster is the
 better choice.
 
-I believe it is possible to more or less transform airflow DAGs (directed acyclic graphs, or compution actions in order) into Dagster Jobs. 
+I believe it is possible to more or less transform airflow DAGs (directed acyclic graphs, or computation actions in order) into Dagster Jobs. 
 
 So what are the gotchas?
 

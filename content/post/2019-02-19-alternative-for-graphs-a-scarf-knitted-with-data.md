@@ -4,10 +4,15 @@ author: Roel M. Hogervorst
 date: '2019-02-19'
 slug: alternative-for-graphs-a-scarf-knitted-with-data
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - physical
+  - inspiration
+difficulty:
+  - advanced
+post-type:
+  - link
 ---
 
 How cool is this: A scarf that represents the temperature every day:

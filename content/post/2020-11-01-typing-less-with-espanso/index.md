@@ -3,15 +3,18 @@ title: Typing less with Espanso
 author: Roel M. Hogervorst
 date: '2020-11-01'
 slug: typing-less-with-espanso
-draft: true
+draft: false
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - hacks
   - software
   - zettelkasten
-subtitle: ''
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 I have been typing a lot lately in my zettelkasten. 

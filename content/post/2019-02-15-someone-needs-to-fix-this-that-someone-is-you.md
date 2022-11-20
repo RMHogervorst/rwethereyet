@@ -4,11 +4,17 @@ author: Roel M. Hogervorst
 date: '2019-02-15'
 slug: someone-needs-to-fix-this-that-someone-is-you
 categories:
-  - communication
+  - blog
 tags:
   - commentary
   - knowledge
-  - mentality
+  - responsibility
+  - communication
+  - wikipedia
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 ---
 
 Today I read a lovely account about [Harold Jeffreys](https://www.bayesianspectacles.org/the-man-who-rewrote-conditional-probability/), 

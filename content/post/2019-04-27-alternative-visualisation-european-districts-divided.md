@@ -4,12 +4,17 @@ author: Roel M. Hogervorst
 date: '2019-04-27'
 slug: alternative-visualisation-european-districts-divided
 categories:
-  - inspiration
+  - blog
 tags:
   - d3
   - visualisation
   - animation
   - scrolling_animation
+  - inspiration
+difficulty:
+ - intermediate
+post-type:
+    - post
 ---
 
 Stumbled upon this nice piece on pudding.cool

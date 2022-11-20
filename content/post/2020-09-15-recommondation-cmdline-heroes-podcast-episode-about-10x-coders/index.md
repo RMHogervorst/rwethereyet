@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-09-15'
 slug: recommondation-cmdline-heroes-podcast-episode-about-10x-coders
 categories:
-  - inspiration
+  - blog
 tags:
   - 100DaysToOffload
   - podcastepisode
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'Coders focused on people'
 ---
 If you are into podcasts and a bit interested in computing and its effect

@@ -4,9 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-03-25'
 slug: ip-adress-ranges
 categories:
-  - other
+  - blog
+difficulty:
+  - intermediate
+post-type:
+  - lessons-learned
 tags:
   - internet
+  - ip4
   - GCP
   - binary
 ---
@@ -21,7 +26,7 @@ The CIDR notation is an ip adres xxx.xxx.xxx.xxx followed by a slash '/' and a n
 The number after the slash is somesort of mask that tells what part of the network is important. In fact it tells what bits are important from left to right but to understand 
 how it works you have to do a bit of mental rotation. 
 
-An IP-adress consists of groups seperated by the dot. But in 'reality' the internet works with bits. So every group is 8 bits (an octet) and can take a number between 0 and 255 which is 2 to the power of 8 $2^{8} = 256$ but computer scientists count from zero.
+An IP-adress consists of groups separated by the dot. But in 'reality' the internet works with bits. So every group is 8 bits (an octet) and can take a number between 0 and 255 which is 2 to the power of 8 $2^{8} = 256$ but computer scientists count from zero.
 
 so every octet is actually something like this:
 

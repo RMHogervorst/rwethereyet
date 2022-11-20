@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-04-25'
 slug: pandemic-visualisation-in-3d
 categories:
-  - inspiration
-  - linkpost
+  - blog
 tags:
   - visualisation
+  - inspiration
+difficulty:
+  - beginner
+post-type:
+  - link
 ---
 
 

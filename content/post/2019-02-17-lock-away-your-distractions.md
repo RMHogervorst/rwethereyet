@@ -4,10 +4,16 @@ author: Roel M. Hogervorst
 date: '2019-02-17'
 slug: lock-away-your-distractions
 categories:
-  - inspiration
+  - blog
 tags:
   - hacks
   - physical
+  - inspiration
+  - hardware
+difficulty:
+  - advanced
+post-type:
+  - link
 ---
 
 This is a beautiful build of a simple box with a timer <https://www.digitaljunky.io/the-anti-procrastination-box/> 

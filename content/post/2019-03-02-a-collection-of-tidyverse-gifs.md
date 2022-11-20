@@ -5,10 +5,16 @@ date: '2019-03-02'
 slug: a-collection-of-tidyverse-gifs
 categories:
   - R
-  - inspiration
+  - blog
 tags:
   - gif
   - images
+  - inspiration
+  - tidyverse
+difficulty:
+  - beginner
+post-type:
+  - post
 ---
 
 This is a collection of my favorite tidyverse gifs and images.

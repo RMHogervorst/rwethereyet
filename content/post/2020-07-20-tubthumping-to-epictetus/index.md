@@ -4,12 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-07-20'
 slug: tubthumping-to-epictetus
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - stoic
   - music
   - 1997
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 subtitle: 'Bangers reminiscent of ancient Rome: dichotomy of control'
 ---
 In 1997 the British band Chumbawamba dropped a banger on the dancefloors: 'Tubthumbing'. 

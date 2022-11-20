@@ -4,14 +4,17 @@ author: Roel M. Hogervorst
 date: '2020-06-11'
 slug: reading-for-pleasure-and-reading-for-learning
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - zettelkasten
   - reading
   - slipbox
   - books
-subtitle: ''
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 I'm using the zettelkasten / slipbox method of taking notes. And I've been doing that since a few months. That also means I classify all my reading into either reading for learning or reading for

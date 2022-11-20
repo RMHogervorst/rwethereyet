@@ -4,11 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-07-05'
 slug: pseudo-profound-bullshit
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - pseudoprofoundBS
   - skepticism
+  - inspiration
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'sacrificing education begins with changing the oceans'
 ---
 

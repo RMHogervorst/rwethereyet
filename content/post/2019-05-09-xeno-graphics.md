@@ -4,11 +4,17 @@ author: Roel M. Hogervorst
 date: '2019-05-09'
 slug: xeno-graphics
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - collection
   - examples
+  - inspiration
+difficulty:
+  - intermediate
+post-type:
+  - link
+
 ---
 
 

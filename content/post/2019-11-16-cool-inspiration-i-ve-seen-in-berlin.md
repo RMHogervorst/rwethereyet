@@ -4,10 +4,16 @@ author: Roel M. Hogervorst
 date: '2019-11-16'
 slug: cool-inspiration-i-ve-seen-in-berlin
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - musea
+  - inspiration
+difficulty:
+    - beginner
+post-type:
+    - post
+    - thoughts
 ---
 
 Today I'm in Berlin and I visited 2 museums that I found inspiring! 
@@ -23,11 +29,11 @@ The second thing was an Art installation of [James Elwes](https://www.jakeelwes.
 <img src="/post/2019-11-16-cool-inspiration-i-ve-seen-in-berlin_files/IMG_20191116_122950.jpg" alt="GAN projected into field" width="60%"/>
 It's amazing to see how GANs (generative adversarial networks) are used in art. James trained a GAN on bird images, than generates those over time. 
 
-But the generated images are then projected onto a screen in nature. That scene has been recored in 4k and a background track of artificial birdsong is played over the video. 
+But the generated images are then projected onto a screen in nature. That scene has been recorded in 4k and a background track of artificial birdsong is played over the video. 
 Very remarkable! 
 
 I also visited the [Museum der Dinge](https://www.museumderdinge.org/). Which catalogues things. And the way they are designed. If you liked design thinking, or the creative curve (shoutout to Not So Standard Deviations, the podcast) you might like this museum. 
-This museum has archived objects with design-historic significance  to document modern everdyday life since the 1970s.
+This museum has archived objects with design-historic significance  to document modern everyday life since the 1970s.
 
 Its such an odd collection of everyday items and weird things. 
 

@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-07-27'
 slug: shoutout-to-standard-e-books
 categories:
-  - linkpost
+  - blog
 tags:
   - 100DaysToOffload
-  - eboooks
+  - ebooks
+difficulty:
+  - beginner
+post-type:
+  - link
 subtitle: 'Beautiful and open e-books'
 ---
 

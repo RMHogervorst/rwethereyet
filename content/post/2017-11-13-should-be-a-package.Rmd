@@ -5,8 +5,20 @@ date: '2017-11-13'
 slug: should-be-a-package
 categories:
   - R
-tags: [package]
+tags: 
+    - package
+difficulty:
+  - beginner
+post-type:
+  - link
 ---
+A list of packages that don't yet exist, but definitely should:
+<https://github.com/RMHogervorst/shouldbeapackage>
 
-https://github.com/RMHogervorst/shouldbeapackage
+for example
+
+- TastR: create balanced food or drinks tasting experiments for party or serious study.
+- stereotypR : classifies people by their stance. is it already done? a motion capture package
+- [powRballad](https://github.com/Raoke/powrballad "I actually created it"): solves the ancient problem of; what song do i choose for Kareoke, based on R-level and Nationality.
+- bilocation: enables you to be at two places at the same time. from Jenine K Harris twitter
 

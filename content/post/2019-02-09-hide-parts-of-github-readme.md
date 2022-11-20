@@ -4,12 +4,18 @@ author: Roel M. Hogervorst
 date: '2019-02-09'
 slug: code-folding-github-markdown
 categories:
-  - github
+  - blog
 tags:
   - codefold
   - hacks
   - snippet
   - html
+  - github
+  - markdown
+difficulty:
+  - beginner
+post-type:
+  - clarification
 ---
 
 This is something I have to search for a lot:

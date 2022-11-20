@@ -4,10 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-07-30'
 slug: we-demand-rigidly-defined-areas-of-doubt-and-uncertainty
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - uncertainty
+  - HHGTTG
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'Douglas Adams guides our lives'
 ---
 In 'The Hitchhiker's guide to the Galaxy', a philosopher (Vroomfondel) argues

@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-10-09'
 slug: private-equity-playbook-in-play-bankruptcy-ms-etam
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
-subtitle: ''
+  - Private Equity Playbook
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 ---
 
 So I read this post (in Dutch):

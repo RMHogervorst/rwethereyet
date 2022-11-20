@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-09-01'
 slug: supine-computing-something-i-never-thought-about
 categories:
-  - inspiration
+  - blog
 tags:
   - inspiration
   - hardware
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: ''
 ---
 

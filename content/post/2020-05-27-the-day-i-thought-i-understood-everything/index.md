@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-05-27'
 slug: the-day-i-thought-i-understood-everything
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - circle_of_competence
   - mental_models
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 subtitle: 'Is being sure a sign of doom?'
 ---
 

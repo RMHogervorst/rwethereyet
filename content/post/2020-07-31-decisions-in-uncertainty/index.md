@@ -4,12 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-07-31'
 slug: decisions-in-uncertainty
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - uncertainty
   - decisions
-subtitle: ''
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
+subtitle: 'Analysis Paralysis out of fear'
 ---
 
 Yesterday I talked about rigidly defined areas of uncertainty and doubt. 

@@ -11,6 +11,11 @@ tags:
   - flask
   - cocaine
   - NL
+  - simulation
+difficulty:
+  - intermediate
+post-type:
+  - walkthrough
 ---
 
 We recently hosted a small kaggle-like competition at work,

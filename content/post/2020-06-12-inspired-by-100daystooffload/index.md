@@ -4,11 +4,15 @@ author: Roel M. Hogervorst
 date: '2020-06-12'
 slug: inspired-by-100daystooffload
 categories:
-  - inspiration
+  - blog
 tags:
   - 100DaysToOffload
   - inspiration
   - write
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 subtitle: 'A new group of creators'
 ---
 

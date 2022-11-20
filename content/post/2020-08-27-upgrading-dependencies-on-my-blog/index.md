@@ -4,10 +4,16 @@ author: Roel M. Hogervorst
 date: '2020-08-27'
 slug: upgrading-dependencies-on-my-blog
 categories:
-  - other
+  - blog
 tags:
   - hugo
   - 100DaysToOffload
+  - html
+  - css
+difficulty:
+  - intermediate
+post-type:
+  - walkthrough
 subtitle: 'templating, complicated but very useful!'
 ---
 My main [blog](https://blog.rmhogervorst.nl) had an annoying thingy, I had cool links at the bottom of every page to all my social media, but the icons would not show. I figured out the problem was with my theme. I'm using hugo to build the blog. That means it is a static site that is generated on every new push to the repo. 

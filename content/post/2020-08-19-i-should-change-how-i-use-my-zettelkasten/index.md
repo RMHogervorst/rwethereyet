@@ -3,11 +3,15 @@ title: I Should Change How I Use My Zettelkasten
 author: Roel M. Hogervorst
 date: '2020-08-19'
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - write
   - zettelkasten
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 slug: i-should-change-how-i-use-my-zettelkasten
 ---
 

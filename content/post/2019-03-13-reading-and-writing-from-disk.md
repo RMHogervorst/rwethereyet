@@ -17,6 +17,10 @@ tags:
   - read
   - write
   - speed
+difficulty:
+  - intermediate
+post-type:
+  - analysis
 ---
 
 

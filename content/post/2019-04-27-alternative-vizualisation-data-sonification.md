@@ -4,10 +4,15 @@ author: Roel M. Hogervorst
 date: '2019-04-27'
 slug: alternative-vizualisation-data-sonification
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - sonification
+  - inspiration
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 Heard on Data Stories 138:

@@ -4,10 +4,17 @@ author: Roel M. Hogervorst
 date: '2019-02-18'
 slug: a-drone-that-plants-seeds
 categories:
-  - inspiration
+  - blog
 tags:
   - bot
   - drone
+  - inspiration
+difficulty:
+  - beginner
+  - intermediate
+  - advanced
+post-type:
+  - link
 ---
 
 This has nothing to do with R, but man, this is awesome! 

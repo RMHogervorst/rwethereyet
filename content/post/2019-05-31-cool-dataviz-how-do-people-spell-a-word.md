@@ -4,11 +4,16 @@ author: Roel M. Hogervorst
 date: '2019-05-31'
 slug: cool-dataviz-how-do-people-spell-a-word
 categories:
-  - inspiration
+  - blog
 tags:
   - visualisation
   - spelling
   - language
+  - inspiration
+difficulty:
+    - intermediate
+post-type:
+    - post
 ---
 
 A great spelling experiment of names of celebrities on <pudding.cool> 

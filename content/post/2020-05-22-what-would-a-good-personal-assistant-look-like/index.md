@@ -3,11 +3,15 @@ title: What Would a Good Personal assistant Look Like, Location
 author: Roel M. Hogervorst
 date: '2020-05-22'
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - personal assistant
   - location
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 slug: what-would-a-good-personal-assistant-look-like-location
 subtitle: Location detail depends on context
 ---

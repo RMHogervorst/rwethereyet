@@ -4,10 +4,14 @@ author: Roel M. Hogervorst
 date: '2020-07-23'
 slug: people-will-use-your-stuff-for-the-craziest-things
 categories:
-  - thoughts
+  - blog
 tags:
   - 100DaysToOffload
   - design
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 subtitle: 'And that is awesome'
 ---
 

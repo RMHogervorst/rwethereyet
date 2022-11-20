@@ -3,10 +3,15 @@ title: Old Hungarian Inspiration for Charts
 author: Roel M. Hogervorst
 date: '2020-05-22'
 categories:
-  - inspiration
+  - blog
 tags:
   - Nightingale
   - visualisation
+  - inspiration
+difficulty:
+  - intermediate
+post-type:
+  - link  
 slug: old-hungarian-inspiration-for-charts
 share_img: https://media.giphy.com/media/7Jpnmq5OGeOnb7nP3b/giphy.gif
 ---

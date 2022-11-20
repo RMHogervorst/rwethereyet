@@ -4,14 +4,17 @@ author: Roel M. Hogervorst
 date: '2020-06-09'
 slug: simple-devices
 categories:
-  - other
+  - blog
 tags:
   - 100DaysToOffload
   - kindle
   - ebooks
   - kobo
   - usability
-subtitle: ''
+difficulty:
+  - beginner
+post-type:
+  - thoughts
 ---
 
 So I'm reading a lot right now and I have 2 e-readers, one kobo aura and one older model kindle keyboard and there is one thing that I find frustrating. My kindle has a power off function, but you have to really want

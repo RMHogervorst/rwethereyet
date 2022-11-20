@@ -4,14 +4,18 @@ author: Roel M. Hogervorst
 date: '2020-09-14'
 slug: setting-up-dmarc-on-your-domain
 categories:
-  - other
+  - blog
 tags:
   - internet
   - knowledge
   - solution
   - DMARC
   - DNS
-subtitle: ''
+  - security
+difficulty:
+  - intermediate
+post-type:
+  - thoughts
 ---
 
 I received an email from hackbros1337 (hackbros leet; yes

@@ -4,13 +4,19 @@ author: Roel M. Hogervorst
 date: '2019-02-13'
 slug: andrés-castro-socolich-explains-how-to-get-shiny-server-working-on-a-rpi3
 categories:
-  - inspiration
+  - blog
+  - R
 tags:
   - rpi
   - shiny
   - shiny-server
   - rstudio-server
   - explainer
+  - inspiration
+difficulty:
+  - advanced
+post-type:
+  - link
 ---
 
 
