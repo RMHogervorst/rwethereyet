@@ -8,6 +8,7 @@ categories:
 tags:
   - music
   - comedy
+  - 100DaysToOffload
 subtitle: 'What about these people makes me love it so much?'
 difficulty:
   - beginner
