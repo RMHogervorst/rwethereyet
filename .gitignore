@@ -2,6 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-blogdown
+/blogdown
 public
 Thumbs.db
+/public/
+/resources/

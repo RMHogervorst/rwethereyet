@@ -2,7 +2,7 @@ theme = "hugo-xmin"
 baseURL = "https://notes.rmhogervorst.nl/"
 languageCode = "en-us"
 title = "A braindump of unfinished ideas that are just not there yet"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "index\\.html", "\\.knit\\.md$", "\\.utf8\\.md$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$",  "\\.knit\\.md$", "\\.utf8\\.md$"]
 preserveTaxonomyNames = false
 footnotereturnlinkcontents = "↩"
 
