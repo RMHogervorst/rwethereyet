@@ -1,0 +1,301 @@
+---
+title: Feature Engineering for Ideal Range
+author: Roel M. Hogervorst
+date: '2023-05-14'
+slug: feature-engineering-for-ideal-range
+categories:
+  - blog
+  - R
+tags:
+  - 100DaysToOffload
+  - ml design
+  - explainability
+  - feature engineering
+subtitle: 'The golden middle range'
+difficulty:
+  - intermediate
+post-type:
+  - walkthrough
+---
+
+
+
+<p>I recently talked to someone about assessment and testing of people.
+What if you have a group of super achievers and you want to know if
+other people are similar to that super achiever group or are merely good.</p>
+<p>In this case we assume those people you put into the super achiever group have
+properties that we can detect.</p>
+<p>For instance really good sportspeople (curling?), or really good consultants.</p>
+<p>Suppose we measure things of the super achiever group and also in people who
+are merely good. We can create
+a model to distinguish super achievers from merely good people. You choose a GLM
+(generalized Linear Model); a logistic regression model. This is great because
+you can explain to your stakeholders how the measurements combine to a score.</p>
+<p>But here is the thing: super achievers do not score high or low on your measurements, they consistently score in a middle area. A GLM creates a linear combination <code>(a x measurement1 + b x measurement2 + c x measurement3)</code> of the measurements
+to create a probability of being super achiever.</p>
+<p>People who score high on a positive assocated measurement will get a higher score, but
+that is not actually what you want.</p>
+<p>Of course using different models could take care of this problem. Decision trees can slit one of the measurements at different places to find good decision boundaries. By adding interactions between the variables you can somewhat suppress the effect too.
+You don’t need a special regression, you can feature engineer, apply prior knowledge
+of the situation to the data.</p>
+<div id="using-feature-engineering-to-help-the-model" class="section level2">
+<h2>Using feature engineering to help the model</h2>
+<p>By transforming the measurements you can help the model make better decisions.
+You shouldn’t be afraid to help the model. Especially if you have knowledge
+about the process that is not clear in the data.</p>
+<div id="a-simulation" class="section level3">
+<h3>A simulation</h3>
+<p>Let’s imagine the group you are interested in (super achievers) score slighly
+differnt from the (merely) good achievers. In the code below I simulate
+two groups combine the data and split the data into a training and testset.</p>
+<p>We will only look at the testset at the end.</p>
+<pre class="r"><code>suppressPackageStartupMessages(library(ggplot2))
+library(tidyr)
+library(recipes)</code></pre>
+<pre><code>## Loading required package: dplyr</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre><code>## 
+## Attaching package: &#39;recipes&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     step</code></pre>
+<pre class="r"><code>library(rsample)
+library(workflows)
+library(parsnip)
+library(yardstick)</code></pre>
+<pre><code>## For binary classification, the first factor level is assumed to be the event.
+## Use the argument `event_level = &quot;second&quot;` to alter this as needed.</code></pre>
+<pre class="r"><code># simulate super achievers
+# wider spread for normal achievers
+n = 100
+sa_n = ceiling(n/4)
+set.seed(1235)
+
+sa &lt;- data.frame(
+    type=&quot;super_achievers&quot;,
+    variable_1 = rnorm(sa_n, mean = 25, sd = 5),
+    variable_2 = rnorm(sa_n, mean = 4, sd = 2),
+    variable_3 = rnorm(sa_n, mean = 5, sd = 1)
+)
+ga &lt;-data.frame(
+    type=&quot;great_achievers&quot;,
+    variable_1 = rnorm(n, mean = 30, sd = 5),
+    variable_2 = rnorm(n, mean = 4.5, sd = 3),
+    variable_3 = rnorm(n, mean = 6.1, sd = 3)
+)
+dataset_achievers &lt;- rbind(sa,ga) 
+splits&lt;- rsample::initial_split(dataset_achievers, strata=type)</code></pre>
+<pre class="r"><code>training(splits) %&gt;% 
+    pivot_longer(cols = variable_1:variable_3) %&gt;% 
+    ggplot(aes(x=value, group=type, fill=type) )+
+    geom_density(alpha=1/3)+
+    facet_wrap(~name, scales = &quot;free_x&quot;) +
+    labs(
+        title=&quot;original values of data&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="different-transformations" class="section level3">
+<h3>Different transformations</h3>
+<p>The (free and internet available) book Feature engineering and selection
+by Max Kuhn and Kjell Johnson <a href="https://bookdown.org/max/FES/" class="uri">https://bookdown.org/max/FES/</a> gives awesome
+advise about feature engineering.</p>
+<ul>
+<li>maybe splines? natural cubic spline</li>
+<li>distance to mean ideal</li>
+<li>sign transformation?</li>
+</ul>
+<p>Splines
+&gt; Spline transformations take a numeric column and create multiple features that, when used in a model, can estimate nonlinear trends between the column and some outcome.</p>
+<p>Sign transformation:
+&gt; This has the effect of making all the samples the same distance from the center of the sphere. (Factors are not allowed.)</p>
+<p>I’m using the tidymodels framework to create feature engineering
+recipes. We prep these recipes on the training data and finally
+test them out on the testset (that way we don’t leak test information into the trainingset, giving us unfair advantage).</p>
+<pre class="r"><code>rec_normal&lt;- recipe(training(splits),formula = type~.) %&gt;% 
+    step_center(variable_1:variable_3) %&gt;% 
+    step_scale(variable_1:variable_3)
+
+rec_normal_int &lt;- rec_normal %&gt;% 
+    step_interact(terms= ~variable_1:variable_2) %&gt;% 
+    step_interact(terms= ~variable_2:variable_3) %&gt;% 
+    step_interact(terms= ~variable_1:variable_3)
+rec_sp_sgn &lt;- rec_normal %&gt;% 
+    step_spatialsign(variable_1:variable_3)
+# splines are hard to explain to stakeholders
+# rec_splines&lt;- rec_normal %&gt;% 
+#     step_spline_natural(variable_1:variable_3) 
+
+sa_means_sd &lt;- training(splits) %&gt;% 
+    filter(type==&quot;super_achievers&quot;) %&gt;% 
+    summarize(
+        m_1 = mean(variable_1),
+        m_2 = mean(variable_2),
+        m_3 = mean(variable_3),
+        sd_1 = sd(variable_1),
+        sd_2 = sd(variable_2),
+        sd_3 = sd(variable_3)
+              )
+rec_distance&lt;- recipe(training(splits),formula = type~.) %&gt;% 
+    step_mutate(
+        distance_var1 = abs(variable_1-sa_means_sd$m_1)/sa_means_sd$sd_1,
+        distance_var2 = abs(variable_2-sa_means_sd$m_2)/sa_means_sd$sd_2,
+        distance_var3 = abs(variable_3-sa_means_sd$m_3)/sa_means_sd$sd_3,
+    ) %&gt;% 
+    step_rm(variable_1:variable_3)
+rec_distance_sqrt &lt;-recipe(training(splits),formula = type~.) %&gt;% 
+    step_mutate(
+        distance_var1 = sqrt(abs(variable_1-sa_means_sd$m_1)/sa_means_sd$sd_1),
+        distance_var2 = sqrt(abs(variable_2-sa_means_sd$m_2)/sa_means_sd$sd_2),
+        distance_var3 = sqrt(abs(variable_3-sa_means_sd$m_3)/sa_means_sd$sd_3),
+    ) %&gt;% 
+    step_rm(variable_1:variable_3)
+
+rec_distance_sqrt_norm &lt;- rec_distance_sqrt %&gt;% 
+    step_BoxCox(distance_var1:distance_var3)</code></pre>
+<p>(this doesn’t do anything?)</p>
+<pre class="r"><code>bake(prep(rec_sp_sgn, training = training(splits)),training(splits)) %&gt;% 
+    pivot_longer(cols = variable_1:variable_3) %&gt;% 
+    ggplot(aes(x=value, group=type, fill=type) )+
+    geom_density(alpha=1/3)+
+    facet_wrap(~name, scales = &quot;free_x&quot;) +
+    labs(
+        title=&quot;Spatial sign transformation effect on variables&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>bake(prep(rec_sp_sgn, training = training(splits)),training(splits)) %&gt;%
+    ggplot(aes(variable_1, variable_2, color=type))+
+    geom_point()+
+    labs(
+        title=&quot;Spatial sign transformation effect on variables&quot;,
+        caption=&quot;this is very cool, but not really useful for our purposes&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>bake(prep(rec_sp_sgn, training = training(splits)),training(splits)) %&gt;%
+    ggplot(aes(variable_2, variable_3, color=type))+
+    geom_point()+
+    labs(
+        title=&quot;Spatial sign transformation effect on variables&quot;,
+        caption=&quot;this is very cool, but not really useful for our purposes&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
+<p>(original data is no longer there or course. 93 variables)
+Splines are fun, but no longer really explainable.</p>
+<pre class="r"><code>bake(prep(rec_splines, training = training(splits)),training(splits)) %&gt;% 
+    pivot_longer(cols = variable_1:variable_3) %&gt;% 
+    ggplot(aes(x=value, group=type, fill=type) )+
+    geom_density(alpha=1/3)+
+    facet_wrap(~name, scales = &quot;free_x&quot;) +
+    labs(
+        title=&quot;splines transformation effect on variables&quot;
+    )</code></pre>
+<pre class="r"><code>bake(prep(rec_distance, training = training(splits)),training(splits)) %&gt;% 
+    pivot_longer(cols = distance_var1:distance_var3) %&gt;% 
+    ggplot(aes(x=value, group=type, fill=type) )+
+    geom_density(alpha=1/3)+
+    facet_wrap(~name, scales = &quot;free_x&quot;) +
+    labs(
+        title=&quot;distance transformation effect on variables&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Some more exploration if we can maybe create boundaries.</p>
+<pre class="r"><code>training(splits) %&gt;% 
+    ggplot(aes(variable_2,variable_3, color=type))+
+    geom_point()+
+    geom_rect(data = sa_means_sd, aes(xmin=m_2-sd_2, xmax=m_2+sd_2, ymin=m_3-sd_3, ymax=m_3+sd_3), inherit.aes=FALSE, alpha=1/2)+
+    labs(
+        title=&quot;can we capture the super achievers with a box around mean?&quot;,
+        caption=&quot;not really, but the idea still holds a bit.&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<pre class="r"><code>bake(prep(rec_distance, training = training(splits)),training(splits)) %&gt;% 
+    ggplot(aes(distance_var2, distance_var3, color=type))+
+    geom_point() +
+    labs(
+        title=&quot;Distance from mean super achievers&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code>bake(prep(rec_distance, training = training(splits)),training(splits)) %&gt;% 
+    ggplot(aes(distance_var1, distance_var3, color=type))+
+    geom_point() +
+    labs(
+        title=&quot;Distance from mean super achievers&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-10-2.png" width="672" /></p>
+<p>What if we transform the data in a way that spreads out points in the middle?
+(since we take the aboslute this works. small values are exaggerated.)</p>
+<pre class="r"><code>bake(prep(rec_distance_sqrt, training = training(splits)),training(splits)) %&gt;% 
+    ggplot(aes(distance_var1, distance_var3, color=type))+
+    geom_point() +
+    labs(
+        title=&quot;Distance from mean super achievers&quot;,
+        subtitle=&quot;square root transformation&quot;,
+        caption=&quot;I hoped to spread out the lower values more&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code>bake(prep(rec_distance_sqrt_norm, training = training(splits)),training(splits)) %&gt;% 
+    ggplot(aes(distance_var1, distance_var3, color=type))+
+    geom_point() +
+    labs(
+        title=&quot;Distance from mean super achievers&quot;,
+        subtitle=&quot;square root transformation followed by boxcox&quot;,
+        caption=&quot;I hoped to spread out the lower values more, \nnotice that the only difference is the position of points on the axis\n compared with above.&quot;
+    )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>create models</p>
+<pre class="r"><code>base_model &lt;- logistic_reg(engine=&quot;glm&quot;)
+wf_normal &lt;- workflow(rec_normal, base_model) %&gt;% fit(training(splits))
+wf_normal_interact &lt;- workflow(rec_normal_int, base_model) %&gt;% fit(training(splits))
+wf_dist &lt;- workflow(rec_distance, base_model) %&gt;% fit(training(splits))
+wf_dist_sqrt &lt;- workflow(rec_distance_sqrt, base_model) %&gt;% fit(training(splits))
+wf_dist_sqrt_norm &lt;- workflow(rec_distance_sqrt_norm, base_model) %&gt;% fit(training(splits))
+#wf_splines &lt;- workflow(rec_splines, base_model) %&gt;% fit(training(splits))
+wf_spatsign &lt;- workflow(rec_sp_sgn, base_model) %&gt;% fit(training(splits))</code></pre>
+<p>Predict</p>
+<pre class="r"><code>measures &lt;- yardstick::metric_set(
+    bal_accuracy,f_meas,sensitivity, precision
+)
+# predict with trained workflow
+performance_df &lt;- testing(splits) %&gt;% 
+    select(type) %&gt;% 
+    mutate(
+        wf_normal= predict(wf_normal, testing(splits))$.pred_class,
+        wf_dist= predict(wf_dist, testing(splits))$.pred_class,
+        wf_dist_sqrt=predict(wf_dist_sqrt, testing(splits))$.pred_class,
+        wf_dist_sqrt_norm = predict(wf_dist_sqrt_norm, testing(splits))$.pred_class,
+        wf_spatsign= predict(wf_spatsign, testing(splits))$.pred_class,
+        wf_normal_interact= predict(wf_normal_interact, testing(splits))$.pred_class
+        ) %&gt;% 
+    # pull the predictions together
+    pivot_longer(-type) %&gt;% 
+    group_by(name) %&gt;% 
+    measures(truth= as.factor(type),estimate=value)</code></pre>
+<pre class="r"><code>performance_df %&gt;% 
+    ggplot(aes(.estimate, name))+
+    geom_point()+
+    facet_wrap(~.metric,scales = &quot;free_x&quot;)+
+    labs(
+        title=&quot;effect of feature engineering&quot;,
+        caption=&quot;notice that the three variants of distance perform the same&quot;
+            )</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<ul>
+<li><strong>Sensitivity</strong> (true positive rate) is the probability of a positive test result, conditioned on the individual truly being positive.</li>
+<li><strong>F1 score</strong> is the harmonic mean of precision and sensitivity</li>
+</ul>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>You can use feature engineering to create better results while still keeping
+the results explainable.</p>
+<p><em>I’m publishing this as part of 100 Days To Offload. You can join in yourself by visiting <a href="https://100daystooffload.com" class="uri">https://100daystooffload.com</a>, post - 6/100 2023</em></p>
+<p><em>Find other posts tagged <a href="https://notes.rmhogervorst.nl/tags/100DaysToOffload/">#100DaysToOffload here</a></em></p>
+</div>
