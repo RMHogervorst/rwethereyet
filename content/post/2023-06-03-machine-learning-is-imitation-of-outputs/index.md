@@ -10,7 +10,7 @@ tags:
   - 100daystooffload
   - ml design
   - AI myths
-subtitle: 'just because your modeloutput looks good doesn't mean it is true'
+subtitle: "just because your modeloutput looks good doesn't mean it is true"
 difficulty:
   - advanced
 post-type:
