@@ -1,16 +1,16 @@
 ---
 title: Containers , Cmd not Found
 author: Roel M. Hogervorst
-date: '2023-09-29'
-slug: containers-cmd-not-found
+date: '2023-10-02'
 categories:
   - blog
 tags:
   - 100DaysToOffload
-  - kubernetes
   - containers
+  - kubernetes
   - TIL
-subtitle: 'executable file not found in $PATH'
+slug: containers-cmd-not-found
+subtitle: executable file not found in $PATH
 difficulty:
   - intermediate
 post-type:
