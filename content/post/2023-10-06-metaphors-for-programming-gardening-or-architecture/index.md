@@ -16,13 +16,6 @@ post-type:
   - thoughts
 ---
 
-<!--
-tags: 100DaysToOffload
-
-
-Once you have published an article, don’t forget to post a link on your social media with the hashtag #100DaysToOffload
-
- -->
  
 I've been going over some notes/highlights I took over the years. Because just
 saving them is ridiculous, but that is what I did. I 've learned[^1] you need to 
