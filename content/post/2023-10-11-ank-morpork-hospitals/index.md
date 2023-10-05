@@ -10,18 +10,9 @@ tags:
   - DiscWorld
 subtitle: ''
 difficulty:
-  - beginner
   - intermediate
-  - advanced
 post-type:
   - post
-  - clarification
-  - tutorial
-  - walkthrough
-  - linkpost
-  - thoughts
-  - analysis
-  - lessons-learned
 ---
 This one is hilarious, hospitals don't exist. 
 
