@@ -68,7 +68,7 @@ Returns 143.93.108.123
 
 What is that in octets?
 
-```{r}
+```r
 number2binary = function(number, noBits) {
        binary_vector = rev(as.numeric(intToBits(number)))
        if(missing(noBits)) {
