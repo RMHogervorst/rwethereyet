@@ -17,7 +17,7 @@ So I was reviewing a package and I my R installation couldn't find the python ve
 
 This is the error you'll see:
 
-```{r}
+```r
 reticulate::py_config()
 Error: Python shared library not found, Python bindings not loaded.
 Use reticulate::install_miniconda() if you'd like to install a Miniconda Python environment.
@@ -43,7 +43,7 @@ if you do not set this flag the cython is compiled in a different way and cannot
 Install your python version with pyenv in the following way:
 (in this case I'm using pyenv and with python 3.7.4 )
 
-```{python}
+```python
 env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.7.4
 ```
 This sets an environmental variable called PYTHON_CONFIGURE_OPTS and than installs this python version (Again if it was already there)
