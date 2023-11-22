@@ -22,6 +22,6 @@ Yesterday things I liked about firefox, now some things that I do not like
 2. The push for pocket, I don't get it.
 
 
-*I’m publishing this as part of 100 Days To Offload. You can join in yourself by visiting https://100daystooffload.com, post - 34/100*
+*I’m publishing this as part of 100 Days To Offload. You can join in yourself by visiting https://100daystooffload.com, post - 35/100*
 
 *Find other posts tagged  [#100DaysToOffload here](https://notes.rmhogervorst.nl/tags/100DaysToOffload/)*
