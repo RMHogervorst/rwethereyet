@@ -31,8 +31,8 @@ I now have several automations that play music when I want over the speakers I w
 
 home assistant with music assistant makes useful and silly things possible:
 
-- play the imperial march (star wars) when your father-in-law enters the house? possible
-- turn on christmas music and turn on the christmas tree? possible
+- Play the imperial march (star wars) when your father-in-law enters the house? possible
+- Turn on christmas music and turn on the christmas tree with one button? possible
 - Play band-aid on all speakers and deliver world peace? seems to be broken at the moment
 
 

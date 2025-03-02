@@ -31,7 +31,7 @@ existing devices. I have installed plato. Plato is a sort of app on top of kobo
 (I don't really understand how it works). 
 But it is really fast and it opens massive books easily. It is just a beautiful piece of work!
 
-Fonts are very legible, it is fast, it just works.[^3]
+Fonts are very legible, it is fast, it just works[^3].
 
 - [plato, is a document reader for _Kobo_'s e-readers](https://github.com/baskerville/plato)
 
