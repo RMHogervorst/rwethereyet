@@ -15,6 +15,7 @@ post-type:
 subtitle: ''
 ---
 
+_(I republished this post  on my main blog: [blog.rmhogervorst.nl](https://blog.rmhogervorst.nl/blog/2025/08/02/hacking-etc-ssl-certs-with-containers-in-corporate-networks/))_
 As a consultant I come into different organizations, usually of the larger size.  
 Making my custom applications work in those orgs often revolves around wrangling with TLS certificates.
 
