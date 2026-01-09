@@ -15,9 +15,6 @@ post-type:
     - post
 ---
 
-
-{{< tweet 1060120831345520640 >}}
-
 Jess Hartnett tweets:
 > This is just the prettiest chart ever. Some smarty pants artists/statisticians set up this system that records the amount of sunlight per day at park by burning it into a log via magnifying glass.
 

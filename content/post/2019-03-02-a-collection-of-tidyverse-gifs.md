@@ -25,7 +25,6 @@ This is a collection of my favorite tidyverse gifs and images.
 
 
 ![fading_tidyverse](/images/fading_tidyverse.jpg)
-{{< tweet 1073090879160610817 >}}
 
 
 
